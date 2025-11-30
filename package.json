@@ -1,0 +1,24 @@
+{
+  "name": "strans_ai",
+  "version": "1.0.0",
+  "description": "Inteligência artificial Calculadora de preço de rotas",
+  "homepage": "https://github.com/frrech/STrans_AI#readme",
+  "bugs": {
+    "url": "https://github.com/frrech/STrans_AI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frrech/STrans_AI.git"
+  },
+  "license": "ISC",
+  "author": "francisco, eduardo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0"
+  }
+}
