@@ -7,7 +7,7 @@
  * Nota: você pode ampliar ações para incluir roteamentos discretos (rotas possíveis)
  */
 
-import * as tf from "@tensorflow/tfjs-node";
+import * as tf from "@tensorflow/tfjs";
 import _ from "lodash";
 
 export const VEHICLES = ["moto","bike","van","caminhao"];

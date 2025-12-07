@@ -1,4 +1,4 @@
-import * as tf from "@tensorflow/tfjs-node";
+import * as tf from "@tensorflow/tfjs";
 
 /**
  * Arquitetura simples: MLP -> outputs Q-values (dim = nActions)

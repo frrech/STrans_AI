@@ -17,7 +17,8 @@ export async function initRouteOptimizer() {
 export async function obterMelhorRota({ origem, destino, tipoCarga="pequena", urgencia=false }) {
   // 1) estimar distância (método simples: extrair de rotas CSV média; ideal: Google Maps API)
   // Aqui usamos uma heurística: distancia média de rotas * random factor
-  const rotas = dataSnapshot.rotas || [];
+  const ds = dataSnapshot ?? { rotas: [], clientes: [], entregas: [], veiculos: [] };
+  const rotas = ds.rotas ?? [];
   const avgDist = (rotas.length > 0) ? rotas[rotas.length-1].distancia_media_rota_km || 5 : 5;
   const distKm = Math.max(1, avgDist * (0.6 + Math.random()*1.4)); // 0.6x-2x
 

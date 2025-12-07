@@ -1,4 +1,4 @@
-import * as tf from "@tensorflow/tfjs-node";
+import * as tf from "@tensorflow/tfjs";
 import { createQNetwork } from "./dqn_model.js";
 import { VEHICLES } from "../rl/env.js";
 
