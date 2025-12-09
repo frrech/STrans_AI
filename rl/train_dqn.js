@@ -1,11 +1,35 @@
-import * as tf from "@tensorflow/tfjs-node";
+import "@tensorflow/tfjs-node"
+import * as tf from "@tensorflow/tfjs";
 import { createQNetwork } from "../model/dqn_model.js";
 import ReplayBuffer from "./replayBuffer.js";
 import { buildState, VEHICLES, computeCost, rewardFromCost } from "./env.js";
 import { loadAllData } from "../services/dataLoader.js";
-import { aplicarPricing } from "../services/pricingUtils.js";
+import path from "path";
+import { fileURLToPath } from "url";
+import fs from "fs";
 
 const N_ACTIONS = VEHICLES.length;
+
+// caminho absoluto
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// pasta ../model
+export const modelDir = path.join(__dirname, "../model");
+
+// pasta ../model/dqn_final
+export const finalModelDir = path.join(modelDir, "dqn_final");
+
+// caminho file:///...
+export const finalModelUrl = `file://${finalModelDir.replace(/\\/g, "/")}`;
+
+// cria dirs necessários
+if (!fs.existsSync(modelDir)) fs.mkdirSync(modelDir, { recursive: true });
+if (!fs.existsSync(finalModelDir)) fs.mkdirSync(finalModelDir, { recursive: true });
+      // cria pasta se não existir
+if (!fs.existsSync(finalModelDir)) {
+  fs.mkdirSync(finalModelDir, { recursive: true });
+}
 
 async function train() {
   // hiperparâmetros (ajuste conforme recursos)
@@ -151,14 +175,12 @@ async function train() {
 
     if (ep % 50 === 0) {
       console.log(`Episode ${ep}/${nEpisodes} - epReward=${epReward.toFixed(2)} - epsilon=${epsilon.toFixed(3)} - buffer=${buffer.size()}`);
-      // salvar checkpoint
-      await qNet.save(`file://./model/checkpoint-ep-${ep}`);
     }
   }
 
   // salvar modelo final
-  await qNet.save(`file://./model/dqn_final`);
-  console.log("Training complete. Model saved to ./model/dqn_final");
+  await qNet.save(finalModelUrl);
+  console.log("Training complete. Model saved to ", finalModelUrl);
 }
 
 train().catch(err => {

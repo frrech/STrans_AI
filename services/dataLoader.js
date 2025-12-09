@@ -12,7 +12,7 @@ const DATA_DIR = path.resolve("./data");
 
 function readCSV(fileName) {
   const csv = fs.readFileSync(path.join(DATA_DIR, fileName), "utf8");
-  return parse(csv, { columns: true, skip_empty_lines: true });
+  return parse(csv, { columns: true, skip_empty_lines: true, delimiter: ";" });
 }
 
 export function loadAllData() {
