@@ -1,0 +1,1201 @@
+﻿cliente_id;tipo_cliente;porte_empresa;regiao;volume_mensal_entregas;valor_medio_entrega;data_contrato;tem_contrato_exclusivo;usa_api_integracao;satisfacao_cliente
+1;E-commerce;Pequeno;Belo Horizonte - MG;45;10,85;2024-07-20;False;False;3,7
+2;E-commerce;Pequeno;Curitiba - PR;62;12,69;2024-02-11;False;True;5,0
+3;Restaurante;Pequeno;Brasília - DF;60;8,0;2024-08-07;False;False;3,6
+4;Outros;Pequeno;Belo Horizonte - MG;44;32,92;2024-08-31;False;True;3,1
+5;Varejo;Médio;São Paulo - SP;260;28,19;2024-08-19;True;False;3,6
+6;E-commerce;Grande;Brasília - DF;742;21,01;2024-09-27;False;False;4,2
+7;E-commerce;Grande;São Paulo - SP;944;20,28;2024-09-13;False;True;4,9
+8;Outros;Pequeno;Brasília - DF;79;30,94;2024-05-06;True;True;3,7
+9;Restaurante;Pequeno;Belo Horizonte - MG;57;11,51;2024-05-30;False;False;5,0
+10;E-commerce;Pequeno;São Paulo - SP;49;22,55;2024-09-13;False;True;3,9
+11;Farmácia;Médio;São Paulo - SP;390;19,67;2024-07-28;True;True;3,3
+12;E-commerce;Pequeno;São Paulo - SP;44;16,97;2024-02-16;False;True;3,9
+13;E-commerce;Grande;São Paulo - SP;1099;13,57;2024-12-27;False;True;4,3
+14;Farmácia;Pequeno;São Paulo - SP;31;16,67;2024-03-24;False;False;4,7
+15;Farmácia;Pequeno;Salvador - BA;26;19,62;2024-06-16;False;True;4,2
+16;Varejo;Grande;Salvador - BA;668;37,06;2024-05-16;True;True;4,1
+17;E-commerce;Médio;Brasília - DF;229;15,47;2024-11-29;True;False;3,8
+18;Outros;Pequeno;Curitiba - PR;72;30,17;2024-01-02;False;True;4,2
+19;Varejo;Médio;Salvador - BA;171;19,89;2024-05-22;True;True;3,7
+20;E-commerce;Médio;Rio de Janeiro - RJ;132;20,71;2024-05-17;False;True;3,3
+21;Restaurante;Pequeno;Salvador - BA;62;8,0;2024-12-20;False;True;4,5
+22;Farmácia;Grande;Rio de Janeiro - RJ;505;12,13;2024-05-19;False;False;4,8
+23;E-commerce;Médio;Curitiba - PR;203;15,69;2024-12-21;False;True;3,1
+24;Varejo;Médio;Rio de Janeiro - RJ;190;25,73;2024-11-11;False;True;3,9
+25;E-commerce;Pequeno;Belo Horizonte - MG;42;16,09;2024-03-03;False;True;4,4
+26;Farmácia;Médio;São Paulo - SP;94;18,97;2024-05-13;False;True;4,7
+27;Varejo;Pequeno;Rio de Janeiro - RJ;58;22,65;2024-12-10;False;True;4,2
+28;Farmácia;Grande;Salvador - BA;1032;16,37;2024-10-28;False;True;2,9
+29;E-commerce;Grande;Rio de Janeiro - RJ;527;19,04;2024-11-09;False;False;4,3
+30;E-commerce;Grande;Salvador - BA;704;22,51;2024-05-03;False;True;4,2
+31;E-commerce;Pequeno;Curitiba - PR;52;11,52;2024-10-22;False;True;3,7
+32;Restaurante;Pequeno;Belo Horizonte - MG;49;11,12;2024-12-25;True;True;4,8
+33;Varejo;Pequeno;Rio de Janeiro - RJ;64;40,26;2024-12-30;True;False;4,9
+34;E-commerce;Pequeno;São Paulo - SP;31;14,46;2024-02-03;True;True;4,4
+35;Restaurante;Pequeno;São Paulo - SP;54;16,53;2024-11-24;False;True;4,3
+36;Outros;Pequeno;Curitiba - PR;61;28,91;2024-10-08;True;True;4,4
+37;Varejo;Médio;São Paulo - SP;195;30,2;2024-10-21;False;True;4,3
+38;Varejo;Médio;Rio de Janeiro - RJ;216;29,14;2024-01-17;False;False;4,3
+39;Varejo;Médio;Belo Horizonte - MG;231;29,49;2024-11-23;False;False;3,1
+40;Restaurante;Pequeno;Belo Horizonte - MG;17;9,09;2024-07-23;True;True;5,0
+41;Varejo;Pequeno;São Paulo - SP;49;30,54;2024-02-18;True;True;4,0
+42;Varejo;Médio;Salvador - BA;173;25,15;2024-07-03;True;True;4,1
+43;Restaurante;Pequeno;São Paulo - SP;51;15,16;2024-04-13;False;True;4,4
+44;Restaurante;Pequeno;Rio de Janeiro - RJ;45;13,99;2024-11-09;False;True;2,9
+45;Farmácia;Pequeno;Belo Horizonte - MG;67;17,61;2024-02-09;False;False;4,3
+46;E-commerce;Médio;Brasília - DF;154;10,33;2024-02-02;False;False;4,1
+47;Outros;Pequeno;Curitiba - PR;42;31,5;2024-06-26;True;True;3,8
+48;Varejo;Médio;São Paulo - SP;270;24,97;2024-07-11;False;False;4,9
+49;Restaurante;Pequeno;Curitiba - PR;50;12,09;2024-05-24;True;True;3,9
+50;E-commerce;Pequeno;Rio de Janeiro - RJ;101;15,96;2024-02-26;False;True;4,4
+51;Varejo;Pequeno;Curitiba - PR;20;17,48;2024-08-18;True;True;5,0
+52;E-commerce;Médio;São Paulo - SP;127;13,73;2024-05-30;False;True;4,4
+53;Varejo;Grande;Brasília - DF;700;23,44;2024-11-29;False;True;3,8
+54;E-commerce;Pequeno;Belo Horizonte - MG;53;17,73;2024-08-11;True;True;3,3
+55;Farmácia;Médio;Belo Horizonte - MG;89;11,09;2024-08-18;False;True;4,0
+56;Farmácia;Pequeno;São Paulo - SP;60;15,14;2024-10-29;True;False;3,9
+57;Restaurante;Pequeno;São Paulo - SP;58;15,11;2024-01-29;False;True;4,1
+58;Outros;Médio;Rio de Janeiro - RJ;249;26,48;2024-04-09;False;True;4,0
+59;Farmácia;Pequeno;São Paulo - SP;48;13,88;2024-07-28;True;True;4,5
+60;Farmácia;Pequeno;São Paulo - SP;58;13,89;2024-04-23;False;True;4,0
+61;Restaurante;Pequeno;Rio de Janeiro - RJ;60;13,05;2024-01-29;False;True;4,3
+62;E-commerce;Grande;São Paulo - SP;818;17,94;2024-07-26;False;True;4,4
+63;Restaurante;Pequeno;Belo Horizonte - MG;101;14,35;2024-12-28;False;True;3,5
+64;Farmácia;Pequeno;Rio de Janeiro - RJ;46;11,82;2024-12-01;True;False;3,8
+65;Farmácia;Médio;São Paulo - SP;186;19,88;2024-06-18;True;True;4,4
+66;Farmácia;Médio;São Paulo - SP;161;12,29;2024-07-19;False;False;4,8
+67;Restaurante;Médio;São Paulo - SP;107;8,0;2024-02-22;False;True;3,6
+68;Farmácia;Pequeno;Belo Horizonte - MG;66;20,42;2024-02-26;False;True;4,0
+69;Outros;Médio;São Paulo - SP;175;18,69;2024-07-07;False;True;3,8
+70;Varejo;Pequeno;São Paulo - SP;97;23,07;2024-06-10;True;True;4,2
+71;Farmácia;Pequeno;São Paulo - SP;27;20,97;2024-06-21;False;False;4,3
+72;E-commerce;Pequeno;Belo Horizonte - MG;13;17,2;2024-02-13;True;False;4,2
+73;E-commerce;Médio;Salvador - BA;224;17,48;2024-05-15;False;False;3,6
+74;Outros;Médio;São Paulo - SP;183;14,33;2024-06-27;False;False;4,1
+75;Restaurante;Médio;São Paulo - SP;125;17,34;2024-01-26;False;False;4,1
+76;Varejo;Médio;Rio de Janeiro - RJ;186;28,0;2024-03-15;True;False;4,7
+77;Varejo;Médio;Salvador - BA;216;19,22;2024-08-01;False;False;4,4
+78;Farmácia;Pequeno;Rio de Janeiro - RJ;47;13,69;2024-06-01;False;True;4,7
+79;E-commerce;Pequeno;São Paulo - SP;36;11,99;2024-04-27;False;True;4,5
+80;Restaurante;Pequeno;Belo Horizonte - MG;73;10,95;2024-11-25;False;True;3,2
+81;Varejo;Pequeno;Belo Horizonte - MG;82;22,68;2024-11-20;False;True;3,2
+82;Farmácia;Pequeno;São Paulo - SP;32;15,28;2024-11-19;False;True;4,8
+83;Varejo;Pequeno;São Paulo - SP;83;16,58;2024-07-02;False;True;4,1
+84;E-commerce;Médio;São Paulo - SP;178;17,2;2024-03-02;False;True;3,8
+85;E-commerce;Médio;Belo Horizonte - MG;207;15,42;2024-12-26;False;False;4,2
+86;Varejo;Pequeno;Rio de Janeiro - RJ;22;14,33;2024-03-23;False;True;3,5
+87;Restaurante;Pequeno;São Paulo - SP;68;9,21;2024-04-29;False;True;2,8
+88;Varejo;Pequeno;Salvador - BA;41;30,68;2024-07-10;False;True;4,1
+89;E-commerce;Pequeno;Rio de Janeiro - RJ;84;19,18;2024-05-21;True;True;5,0
+90;E-commerce;Pequeno;Brasília - DF;72;19,65;2024-10-02;True;False;3,5
+91;E-commerce;Pequeno;Rio de Janeiro - RJ;44;23,98;2024-02-19;False;False;4,6
+92;E-commerce;Pequeno;São Paulo - SP;22;18,73;2024-08-14;False;True;3,8
+93;Restaurante;Pequeno;São Paulo - SP;49;11,73;2024-12-16;True;True;4,3
+94;E-commerce;Médio;Rio de Janeiro - RJ;164;15,52;2024-01-02;False;True;4,2
+95;Varejo;Pequeno;São Paulo - SP;67;20,78;2024-11-14;False;True;4,3
+96;Restaurante;Grande;Brasília - DF;834;9,03;2024-10-08;False;True;4,4
+97;E-commerce;Médio;Rio de Janeiro - RJ;264;22,23;2024-09-29;True;True;4,4
+98;E-commerce;Médio;Belo Horizonte - MG;279;19,04;2024-09-02;True;False;3,6
+99;Farmácia;Pequeno;Rio de Janeiro - RJ;65;14,6;2024-01-10;False;True;2,6
+100;Restaurante;Pequeno;Brasília - DF;65;12,23;2024-06-22;False;True;4,0
+101;Varejo;Pequeno;São Paulo - SP;15;23,28;2024-01-23;True;True;4,0
+102;E-commerce;Médio;Curitiba - PR;253;15,86;2024-12-10;False;False;4,3
+103;E-commerce;Médio;Curitiba - PR;221;17,38;2024-04-17;True;False;3,5
+104;Varejo;Médio;Rio de Janeiro - RJ;266;27,72;2024-05-15;True;False;4,5
+105;E-commerce;Pequeno;São Paulo - SP;80;25,34;2024-02-05;False;True;4,1
+106;Restaurante;Médio;Brasília - DF;275;10,35;2024-07-12;False;True;4,3
+107;Varejo;Pequeno;Rio de Janeiro - RJ;43;36,63;2024-10-13;False;False;4,0
+108;Varejo;Pequeno;São Paulo - SP;52;24,17;2024-10-14;False;True;2,9
+109;E-commerce;Médio;São Paulo - SP;219;15,17;2024-10-17;False;True;3,5
+110;E-commerce;Pequeno;Salvador - BA;18;18,01;2024-04-10;True;True;3,0
+111;Varejo;Pequeno;São Paulo - SP;44;25,14;2024-10-23;False;False;3,8
+112;Farmácia;Médio;São Paulo - SP;268;14,73;2024-01-23;False;True;5,0
+113;Varejo;Médio;São Paulo - SP;293;21,12;2024-06-20;True;True;4,1
+114;Farmácia;Pequeno;São Paulo - SP;36;10,68;2024-12-21;True;False;4,8
+115;Restaurante;Grande;Brasília - DF;1125;11,28;2024-06-24;True;True;3,7
+116;E-commerce;Pequeno;São Paulo - SP;64;16,21;2024-03-14;True;True;3,5
+117;Restaurante;Grande;São Paulo - SP;921;11,77;2024-07-16;False;True;5,0
+118;Farmácia;Pequeno;São Paulo - SP;45;24,66;2024-12-16;True;True;4,6
+119;Outros;Pequeno;São Paulo - SP;18;29,12;2024-09-22;True;True;5,0
+120;Varejo;Pequeno;Belo Horizonte - MG;24;37,08;2024-10-12;False;False;3,5
+121;Outros;Pequeno;Belo Horizonte - MG;16;27,51;2024-01-27;False;False;3,9
+122;Outros;Pequeno;Salvador - BA;58;33,84;2024-09-06;False;True;4,4
+123;Outros;Médio;Brasília - DF;188;16,71;2024-09-13;False;True;3,5
+124;Outros;Pequeno;Belo Horizonte - MG;60;12,0;2024-03-01;False;False;5,0
+125;Restaurante;Grande;Rio de Janeiro - RJ;940;13,83;2024-11-02;False;True;2,7
+126;Varejo;Pequeno;São Paulo - SP;48;31,44;2024-04-23;False;False;3,7
+127;E-commerce;Pequeno;São Paulo - SP;50;17,13;2024-02-19;False;False;3,4
+128;Outros;Pequeno;Rio de Janeiro - RJ;10;23,97;2024-10-25;False;False;4,4
+129;Varejo;Médio;Belo Horizonte - MG;119;15,59;2024-06-20;False;True;3,5
+130;Varejo;Pequeno;Belo Horizonte - MG;60;44,59;2024-04-10;False;True;5,0
+131;Varejo;Pequeno;São Paulo - SP;24;12,0;2024-12-31;False;False;3,3
+132;E-commerce;Pequeno;Salvador - BA;52;19,65;2024-05-02;False;False;4,2
+133;Farmácia;Médio;São Paulo - SP;183;11,17;2024-11-14;False;True;4,1
+134;Varejo;Pequeno;Rio de Janeiro - RJ;42;20,15;2024-11-15;False;False;4,4
+135;E-commerce;Pequeno;Brasília - DF;19;18,54;2024-12-26;True;False;4,1
+136;E-commerce;Pequeno;Rio de Janeiro - RJ;12;17,8;2024-11-11;False;False;3,6
+137;Varejo;Pequeno;Brasília - DF;45;21,78;2024-01-15;False;True;4,3
+138;Restaurante;Médio;São Paulo - SP;144;14,81;2024-08-22;False;False;3,7
+139;E-commerce;Pequeno;São Paulo - SP;83;17,33;2024-12-19;True;False;3,8
+140;Varejo;Pequeno;Belo Horizonte - MG;14;24,07;2024-09-07;True;True;5,0
+141;Varejo;Médio;São Paulo - SP;167;12,0;2024-02-16;False;True;4,1
+142;Varejo;Pequeno;Belo Horizonte - MG;66;18,67;2024-09-18;False;True;4,5
+143;Farmácia;Pequeno;São Paulo - SP;44;21,35;2024-04-18;False;False;4,2
+144;E-commerce;Grande;Belo Horizonte - MG;818;15,1;2024-07-29;False;True;3,7
+145;Varejo;Pequeno;Belo Horizonte - MG;31;24,88;2024-01-07;True;True;4,5
+146;E-commerce;Pequeno;São Paulo - SP;63;24,56;2024-11-17;True;True;3,9
+147;E-commerce;Pequeno;São Paulo - SP;53;17,72;2024-09-10;False;False;3,8
+148;Restaurante;Pequeno;Rio de Janeiro - RJ;42;8,0;2024-04-28;False;False;3,8
+149;E-commerce;Pequeno;Belo Horizonte - MG;60;14,17;2024-02-19;False;True;3,2
+150;Restaurante;Pequeno;Brasília - DF;75;8,42;2024-09-20;True;True;3,7
+151;Farmácia;Médio;Brasília - DF;205;16,25;2024-11-30;False;False;3,7
+152;Restaurante;Médio;Belo Horizonte - MG;149;11,51;2024-06-19;False;False;4,9
+153;Restaurante;Pequeno;São Paulo - SP;62;11,91;2024-03-23;False;True;3,6
+154;E-commerce;Pequeno;Rio de Janeiro - RJ;38;17,75;2024-03-10;False;True;4,0
+155;E-commerce;Pequeno;Salvador - BA;45;15,58;2024-01-01;True;True;4,7
+156;Farmácia;Pequeno;Brasília - DF;32;15,21;2024-08-06;False;False;4,9
+157;Farmácia;Médio;Rio de Janeiro - RJ;215;15,32;2024-12-02;True;True;4,4
+158;Varejo;Pequeno;Curitiba - PR;10;29,95;2024-10-07;False;True;4,4
+159;Restaurante;Médio;São Paulo - SP;104;12,11;2024-05-25;False;True;4,0
+160;E-commerce;Pequeno;Rio de Janeiro - RJ;71;15,96;2024-02-05;False;True;3,9
+161;Farmácia;Pequeno;Belo Horizonte - MG;21;10,0;2024-12-29;False;False;4,0
+162;E-commerce;Médio;Curitiba - PR;208;16,09;2024-07-20;False;False;4,1
+163;Farmácia;Pequeno;Belo Horizonte - MG;20;10,0;2024-07-16;False;False;4,6
+164;E-commerce;Pequeno;São Paulo - SP;10;11,08;2024-04-05;False;True;4,3
+165;Varejo;Médio;Rio de Janeiro - RJ;140;23,52;2024-06-14;True;False;3,8
+166;Restaurante;Pequeno;Rio de Janeiro - RJ;42;11,37;2024-12-10;False;True;3,7
+167;E-commerce;Médio;Rio de Janeiro - RJ;200;12,64;2024-04-14;False;True;4,3
+168;E-commerce;Pequeno;São Paulo - SP;55;13,8;2024-02-09;False;True;4,3
+169;Varejo;Pequeno;Belo Horizonte - MG;64;12,1;2024-10-19;False;True;3,3
+170;Varejo;Médio;São Paulo - SP;209;14,6;2024-07-10;False;True;3,8
+171;Varejo;Pequeno;São Paulo - SP;40;36,65;2024-04-21;False;False;4,6
+172;Farmácia;Pequeno;Brasília - DF;88;14,7;2024-02-08;False;False;3,6
+173;Farmácia;Pequeno;Belo Horizonte - MG;39;18,36;2024-05-06;False;False;5,0
+174;E-commerce;Pequeno;São Paulo - SP;23;23,7;2024-06-24;False;False;3,7
+175;E-commerce;Médio;Brasília - DF;145;23,92;2024-01-22;True;True;4,6
+176;Outros;Médio;Belo Horizonte - MG;220;27,42;2024-07-20;False;True;3,4
+177;Restaurante;Grande;Rio de Janeiro - RJ;729;10,54;2024-05-01;False;True;4,3
+178;Restaurante;Médio;Salvador - BA;200;11,6;2024-01-16;False;True;4,9
+179;E-commerce;Médio;São Paulo - SP;130;16,04;2024-03-12;False;False;3,7
+180;E-commerce;Pequeno;Belo Horizonte - MG;29;15,46;2024-01-05;True;False;4,1
+181;E-commerce;Pequeno;Rio de Janeiro - RJ;48;10,0;2024-04-23;False;True;3,8
+182;Restaurante;Grande;Salvador - BA;861;12,48;2024-11-06;False;True;4,2
+183;Restaurante;Pequeno;São Paulo - SP;72;11,24;2024-09-14;False;False;3,9
+184;E-commerce;Médio;São Paulo - SP;209;12,55;2024-02-24;False;False;3,6
+185;E-commerce;Médio;Belo Horizonte - MG;246;23,72;2024-12-04;False;True;4,0
+186;Restaurante;Pequeno;São Paulo - SP;68;11,46;2024-06-06;True;True;4,4
+187;Outros;Pequeno;Belo Horizonte - MG;89;12,0;2024-07-10;False;True;3,9
+188;E-commerce;Médio;São Paulo - SP;283;25,5;2024-02-25;False;True;3,4
+189;Restaurante;Grande;Curitiba - PR;938;8,0;2024-05-30;True;True;3,9
+190;E-commerce;Médio;Brasília - DF;125;23,8;2024-03-16;False;True;3,4
+191;Farmácia;Pequeno;Brasília - DF;31;18,18;2024-01-26;False;True;3,7
+192;Farmácia;Médio;Rio de Janeiro - RJ;247;16,87;2024-06-17;False;True;3,8
+193;E-commerce;Médio;São Paulo - SP;196;15,26;2024-05-23;False;False;3,8
+194;E-commerce;Grande;São Paulo - SP;569;19,3;2024-05-14;False;False;4,0
+195;Farmácia;Médio;Rio de Janeiro - RJ;197;15,46;2024-05-09;True;False;4,5
+196;Varejo;Pequeno;São Paulo - SP;64;27,48;2024-06-24;True;False;5,0
+197;Farmácia;Pequeno;São Paulo - SP;69;15,26;2024-12-11;False;False;4,0
+198;Restaurante;Pequeno;Brasília - DF;24;13,1;2024-10-06;True;False;4,3
+199;Restaurante;Pequeno;Rio de Janeiro - RJ;62;13,44;2024-12-13;True;False;2,5
+200;E-commerce;Pequeno;Rio de Janeiro - RJ;59;20,52;2024-08-06;False;True;3,4
+201;Varejo;Pequeno;Belo Horizonte - MG;71;20,03;2024-05-04;False;True;4,1
+202;Varejo;Médio;Brasília - DF;224;27,57;2024-11-30;True;True;4,3
+203;E-commerce;Médio;São Paulo - SP;202;20,58;2024-03-20;False;False;5,0
+204;Outros;Médio;São Paulo - SP;150;34,56;2024-07-19;False;True;4,7
+205;Restaurante;Médio;Brasília - DF;272;9,7;2024-09-21;True;True;4,4
+206;Restaurante;Pequeno;São Paulo - SP;47;12,62;2024-12-20;False;False;3,6
+207;Farmácia;Grande;Belo Horizonte - MG;565;10,42;2024-10-10;False;False;3,2
+208;Farmácia;Pequeno;São Paulo - SP;25;13,64;2024-10-15;False;False;4,6
+209;Restaurante;Pequeno;Curitiba - PR;25;11,49;2024-10-26;False;False;4,4
+210;Varejo;Pequeno;Curitiba - PR;63;19,38;2024-01-01;False;False;3,3
+211;Outros;Médio;Curitiba - PR;228;15,1;2024-04-18;False;True;4,5
+212;E-commerce;Pequeno;Salvador - BA;64;13,89;2024-06-17;False;True;3,8
+213;E-commerce;Pequeno;Curitiba - PR;24;15,02;2024-08-31;False;False;4,0
+214;E-commerce;Médio;Brasília - DF;285;19,61;2024-01-17;False;True;5,0
+215;E-commerce;Pequeno;São Paulo - SP;84;15,57;2024-11-12;False;False;3,8
+216;E-commerce;Grande;São Paulo - SP;675;10,0;2024-10-13;False;False;3,6
+217;E-commerce;Médio;Salvador - BA;137;20,94;2024-04-03;False;False;4,5
+218;Outros;Pequeno;Curitiba - PR;41;20,55;2024-02-27;True;False;3,5
+219;Varejo;Grande;Rio de Janeiro - RJ;879;31,82;2024-02-22;False;True;3,8
+220;Varejo;Grande;São Paulo - SP;881;13,3;2024-07-29;False;True;3,6
+221;Varejo;Pequeno;São Paulo - SP;66;17,13;2024-06-06;False;True;4,4
+222;Varejo;Pequeno;Curitiba - PR;66;17,24;2024-03-24;True;False;4,1
+223;E-commerce;Pequeno;São Paulo - SP;71;16,32;2024-09-28;True;True;3,5
+224;Varejo;Pequeno;Brasília - DF;40;20,71;2024-06-16;False;True;3,8
+225;E-commerce;Pequeno;São Paulo - SP;31;22,0;2024-11-22;False;False;3,6
+226;Varejo;Pequeno;Curitiba - PR;69;16,82;2024-10-08;False;False;4,1
+227;E-commerce;Médio;São Paulo - SP;168;21,28;2024-12-11;False;True;2,9
+228;Farmácia;Médio;Salvador - BA;194;12,03;2024-10-03;False;True;4,9
+229;E-commerce;Médio;Rio de Janeiro - RJ;182;14,09;2024-12-14;False;False;3,5
+230;E-commerce;Pequeno;Rio de Janeiro - RJ;58;17,94;2024-07-30;False;True;3,1
+231;E-commerce;Médio;Rio de Janeiro - RJ;149;22,15;2024-01-30;False;True;3,8
+232;Varejo;Pequeno;São Paulo - SP;22;20,04;2024-10-22;True;True;4,1
+233;E-commerce;Grande;São Paulo - SP;777;18,96;2024-10-06;False;True;4,5
+234;E-commerce;Médio;Curitiba - PR;144;10,14;2024-05-20;False;True;4,6
+235;E-commerce;Grande;Belo Horizonte - MG;884;17,06;2024-09-15;False;True;3,5
+236;E-commerce;Pequeno;Belo Horizonte - MG;53;16,14;2024-12-03;False;True;3,9
+237;E-commerce;Pequeno;Brasília - DF;10;16,94;2024-07-20;True;True;4,1
+238;Varejo;Médio;Belo Horizonte - MG;121;27,05;2024-05-05;False;True;3,7
+239;E-commerce;Grande;Brasília - DF;808;18,79;2024-09-16;False;True;5,0
+240;Varejo;Médio;São Paulo - SP;80;27,86;2024-01-29;True;True;4,2
+241;Farmácia;Pequeno;São Paulo - SP;44;15,55;2024-02-27;True;True;5,0
+242;Restaurante;Médio;São Paulo - SP;178;8,0;2024-04-24;False;True;4,0
+243;E-commerce;Médio;Rio de Janeiro - RJ;117;21,25;2024-01-09;False;False;4,1
+244;Farmácia;Pequeno;Belo Horizonte - MG;43;12,72;2024-06-28;False;False;5,0
+245;Farmácia;Pequeno;Belo Horizonte - MG;55;16,65;2024-10-03;False;False;2,5
+246;Outros;Pequeno;Rio de Janeiro - RJ;16;12,0;2024-10-04;False;False;3,9
+247;E-commerce;Grande;Brasília - DF;620;18,16;2024-04-10;True;False;3,7
+248;Farmácia;Pequeno;São Paulo - SP;46;14,12;2024-10-30;False;False;4,9
+249;Farmácia;Médio;São Paulo - SP;103;17,44;2024-02-18;False;True;3,8
+250;Varejo;Pequeno;São Paulo - SP;52;18,07;2024-05-21;False;True;4,1
+251;E-commerce;Pequeno;Rio de Janeiro - RJ;79;20,8;2024-10-26;False;False;3,6
+252;E-commerce;Pequeno;São Paulo - SP;73;15,75;2024-09-06;False;False;4,4
+253;Varejo;Pequeno;São Paulo - SP;49;20,0;2024-03-28;False;False;3,4
+254;Farmácia;Médio;Belo Horizonte - MG;256;17,0;2024-04-24;False;False;4,3
+255;Restaurante;Médio;Rio de Janeiro - RJ;198;12,45;2024-05-07;False;False;3,6
+256;E-commerce;Pequeno;São Paulo - SP;69;20,13;2024-05-14;False;False;4,1
+257;Restaurante;Pequeno;São Paulo - SP;29;12,93;2024-09-02;False;True;3,1
+258;Restaurante;Pequeno;Brasília - DF;27;8,0;2024-05-22;False;False;3,0
+259;Restaurante;Pequeno;São Paulo - SP;37;9,2;2024-05-21;True;True;5,0
+260;Farmácia;Pequeno;São Paulo - SP;89;15,2;2024-08-29;False;True;4,7
+261;Varejo;Pequeno;Belo Horizonte - MG;65;29,01;2024-04-02;True;True;4,1
+262;Varejo;Pequeno;São Paulo - SP;48;34,87;2024-06-24;False;False;4,6
+263;Restaurante;Pequeno;Salvador - BA;95;13,07;2024-07-07;False;False;4,7
+264;Restaurante;Pequeno;Brasília - DF;29;13,07;2024-04-18;False;True;3,4
+265;E-commerce;Pequeno;São Paulo - SP;52;12,55;2024-04-27;False;False;3,8
+266;E-commerce;Pequeno;Salvador - BA;15;12,69;2024-01-07;False;True;4,9
+267;Restaurante;Pequeno;Rio de Janeiro - RJ;49;16,01;2024-08-26;False;False;4,7
+268;Varejo;Pequeno;Curitiba - PR;27;16,12;2024-07-26;False;False;4,2
+269;Restaurante;Pequeno;Rio de Janeiro - RJ;55;12,42;2024-05-10;False;True;4,4
+270;Outros;Pequeno;Brasília - DF;58;30,55;2024-08-01;True;False;3,7
+271;Restaurante;Médio;Curitiba - PR;112;12,38;2024-08-17;True;True;4,1
+272;E-commerce;Médio;Rio de Janeiro - RJ;203;21,73;2024-09-10;False;True;4,1
+273;Restaurante;Pequeno;Belo Horizonte - MG;50;9,26;2024-01-28;False;False;4,8
+274;Varejo;Pequeno;São Paulo - SP;42;25,44;2024-01-22;False;False;3,9
+275;E-commerce;Pequeno;Brasília - DF;54;19,34;2024-04-23;True;True;4,0
+276;Varejo;Pequeno;São Paulo - SP;27;19,52;2024-07-12;True;False;4,5
+277;Varejo;Médio;Belo Horizonte - MG;209;20,69;2024-12-08;False;False;3,5
+278;E-commerce;Pequeno;Rio de Janeiro - RJ;47;14,26;2024-07-28;True;True;4,8
+279;E-commerce;Grande;São Paulo - SP;775;22,12;2024-01-24;False;False;4,2
+280;Varejo;Médio;Belo Horizonte - MG;172;30,99;2024-08-13;False;True;4,4
+281;Varejo;Médio;Belo Horizonte - MG;176;20,53;2024-11-20;False;True;4,5
+282;E-commerce;Médio;Rio de Janeiro - RJ;239;18,26;2024-07-26;True;False;4,1
+283;Varejo;Pequeno;Salvador - BA;34;28,97;2024-11-14;True;True;4,5
+284;Varejo;Pequeno;Belo Horizonte - MG;62;30,31;2024-12-28;False;True;4,0
+285;Outros;Médio;São Paulo - SP;198;30,88;2024-10-11;False;True;3,2
+286;Varejo;Médio;São Paulo - SP;239;25,96;2024-09-23;True;False;4,1
+287;Farmácia;Grande;Rio de Janeiro - RJ;783;17,05;2024-12-24;False;False;3,9
+288;Restaurante;Pequeno;Belo Horizonte - MG;35;11,69;2024-03-31;False;True;3,8
+289;E-commerce;Pequeno;São Paulo - SP;39;15,5;2024-06-06;True;True;5,0
+290;Varejo;Pequeno;Rio de Janeiro - RJ;75;18,59;2024-02-28;False;False;3,6
+291;Varejo;Médio;Rio de Janeiro - RJ;236;26,77;2024-08-16;True;True;4,6
+292;Farmácia;Pequeno;Rio de Janeiro - RJ;67;16,92;2024-04-26;False;False;3,1
+293;Varejo;Grande;Rio de Janeiro - RJ;1420;12,0;2024-08-26;True;True;3,3
+294;Farmácia;Médio;Rio de Janeiro - RJ;164;14,28;2024-04-12;False;True;4,4
+295;Varejo;Pequeno;São Paulo - SP;68;16,77;2024-09-18;False;True;4,4
+296;E-commerce;Pequeno;Rio de Janeiro - RJ;60;18,75;2024-01-16;False;True;4,1
+297;Farmácia;Pequeno;Brasília - DF;71;20,59;2024-04-21;False;True;3,5
+298;E-commerce;Pequeno;Brasília - DF;49;22,63;2024-07-02;True;True;3,7
+299;E-commerce;Médio;São Paulo - SP;257;13,57;2024-06-25;False;True;3,9
+300;Varejo;Pequeno;Rio de Janeiro - RJ;85;22,02;2024-11-21;False;False;4,5
+301;E-commerce;Pequeno;Rio de Janeiro - RJ;60;26,23;2024-07-30;True;False;4,2
+302;E-commerce;Pequeno;Belo Horizonte - MG;32;23,19;2024-06-28;False;True;4,7
+303;Restaurante;Pequeno;Curitiba - PR;70;9,27;2024-07-02;False;True;3,9
+304;Varejo;Grande;Rio de Janeiro - RJ;602;28,37;2024-08-16;False;True;4,3
+305;Outros;Pequeno;Belo Horizonte - MG;54;25,39;2024-01-30;False;False;4,0
+306;E-commerce;Pequeno;São Paulo - SP;59;22,22;2024-06-12;False;False;5,0
+307;E-commerce;Pequeno;Rio de Janeiro - RJ;28;19,78;2024-10-03;False;False;4,2
+308;E-commerce;Pequeno;Belo Horizonte - MG;38;18,54;2024-02-07;True;True;3,8
+309;Varejo;Pequeno;Rio de Janeiro - RJ;57;20,05;2024-12-14;False;False;3,6
+310;Restaurante;Pequeno;Belo Horizonte - MG;71;13,3;2024-10-04;False;True;3,3
+311;Varejo;Médio;Curitiba - PR;153;27,41;2024-06-17;False;True;2,7
+312;Varejo;Pequeno;São Paulo - SP;17;23,03;2024-03-01;False;True;4,1
+313;Varejo;Médio;Belo Horizonte - MG;108;29,21;2024-04-01;False;False;4,7
+314;Varejo;Médio;São Paulo - SP;284;32,51;2024-10-26;False;False;3,4
+315;Varejo;Pequeno;São Paulo - SP;47;33,95;2024-02-11;True;False;3,7
+316;E-commerce;Pequeno;São Paulo - SP;38;20,06;2024-06-01;False;False;4,6
+317;Restaurante;Pequeno;São Paulo - SP;50;13,63;2024-06-17;True;False;3,3
+318;E-commerce;Pequeno;São Paulo - SP;15;12,13;2024-05-30;False;True;4,0
+319;Varejo;Pequeno;Curitiba - PR;19;37,23;2024-10-14;True;True;2,9
+320;Outros;Médio;São Paulo - SP;209;22,26;2024-03-27;True;True;3,8
+321;Varejo;Pequeno;Belo Horizonte - MG;52;27,26;2024-01-18;False;False;5,0
+322;Farmácia;Médio;São Paulo - SP;194;12,64;2024-06-02;True;False;3,7
+323;E-commerce;Pequeno;Rio de Janeiro - RJ;21;15,39;2024-03-20;False;True;4,6
+324;E-commerce;Pequeno;Rio de Janeiro - RJ;53;11,19;2024-10-06;False;True;4,2
+325;E-commerce;Médio;São Paulo - SP;80;21,41;2024-12-06;False;False;4,3
+326;Varejo;Pequeno;Rio de Janeiro - RJ;56;33,57;2024-12-23;False;True;3,9
+327;Restaurante;Médio;Rio de Janeiro - RJ;143;9,95;2024-10-30;True;True;5,0
+328;E-commerce;Pequeno;Salvador - BA;77;20,38;2024-11-06;False;False;4,7
+329;Varejo;Pequeno;Curitiba - PR;44;26,18;2024-07-01;True;True;3,7
+330;Varejo;Médio;Rio de Janeiro - RJ;209;17,96;2024-06-04;True;True;3,6
+331;Varejo;Pequeno;Curitiba - PR;40;15,13;2024-01-03;True;True;4,2
+332;Varejo;Pequeno;São Paulo - SP;70;23,92;2024-07-03;False;True;4,3
+333;E-commerce;Pequeno;São Paulo - SP;50;12,79;2024-04-21;True;True;3,6
+334;E-commerce;Pequeno;Brasília - DF;32;14,6;2024-04-08;False;True;3,8
+335;Farmácia;Pequeno;Brasília - DF;84;16,35;2024-09-11;False;True;4,7
+336;Farmácia;Pequeno;Rio de Janeiro - RJ;61;13,63;2024-11-16;False;True;3,3
+337;Farmácia;Pequeno;Curitiba - PR;40;15,28;2024-01-22;False;False;5,0
+338;Varejo;Médio;Belo Horizonte - MG;230;40,65;2024-01-25;True;True;4,0
+339;Varejo;Pequeno;São Paulo - SP;57;30,59;2024-12-12;False;False;3,9
+340;Farmácia;Médio;São Paulo - SP;218;22,35;2024-10-09;True;True;3,7
+341;Outros;Pequeno;Belo Horizonte - MG;59;27,12;2024-04-18;False;False;3,9
+342;Varejo;Pequeno;Rio de Janeiro - RJ;39;38,18;2024-01-07;True;False;4,7
+343;E-commerce;Médio;Belo Horizonte - MG;139;11,32;2024-03-09;True;True;3,4
+344;Varejo;Pequeno;São Paulo - SP;43;23,01;2024-05-20;False;True;4,0
+345;Restaurante;Pequeno;Brasília - DF;34;14,22;2024-10-26;False;False;4,0
+346;Varejo;Médio;São Paulo - SP;164;28,84;2024-10-26;True;True;3,8
+347;Outros;Grande;Rio de Janeiro - RJ;617;18,64;2024-02-16;False;True;4,6
+348;Farmácia;Médio;Curitiba - PR;230;10,04;2024-06-30;False;True;4,0
+349;Farmácia;Pequeno;Rio de Janeiro - RJ;24;10,0;2024-12-15;False;False;4,5
+350;Varejo;Pequeno;Belo Horizonte - MG;28;25,86;2024-07-02;True;False;4,8
+351;Farmácia;Grande;Curitiba - PR;829;13,1;2024-03-09;False;False;4,1
+352;Farmácia;Pequeno;Rio de Janeiro - RJ;51;12,96;2024-09-27;True;True;4,4
+353;Farmácia;Médio;São Paulo - SP;263;19,66;2024-04-11;False;True;4,3
+354;E-commerce;Pequeno;Rio de Janeiro - RJ;65;21,63;2024-10-31;False;True;4,1
+355;Varejo;Grande;São Paulo - SP;680;21,98;2024-01-07;True;True;3,0
+356;Farmácia;Pequeno;Curitiba - PR;92;17,42;2024-10-27;False;False;4,7
+357;Varejo;Pequeno;São Paulo - SP;23;22,19;2024-12-05;False;False;4,8
+358;Farmácia;Médio;Belo Horizonte - MG;173;15,89;2024-11-26;False;False;3,3
+359;E-commerce;Pequeno;São Paulo - SP;50;20,83;2024-02-03;False;True;3,8
+360;E-commerce;Pequeno;Rio de Janeiro - RJ;41;18,96;2024-10-12;False;True;5,0
+361;Restaurante;Pequeno;São Paulo - SP;38;11,6;2024-10-18;True;False;4,6
+362;E-commerce;Pequeno;Curitiba - PR;44;23,82;2024-03-24;False;False;3,5
+363;Restaurante;Médio;São Paulo - SP;165;12,75;2024-11-28;False;False;4,4
+364;Outros;Pequeno;São Paulo - SP;44;12,04;2024-05-05;False;True;4,2
+365;Varejo;Médio;Belo Horizonte - MG;266;14,71;2024-02-25;False;False;2,5
+366;Restaurante;Pequeno;São Paulo - SP;70;10,33;2024-05-15;True;True;3,8
+367;Varejo;Médio;São Paulo - SP;204;25,93;2024-04-29;True;True;4,6
+368;Varejo;Médio;Belo Horizonte - MG;183;12,0;2024-02-18;False;False;4,1
+369;E-commerce;Médio;Rio de Janeiro - RJ;285;17,43;2024-12-04;True;True;4,6
+370;Restaurante;Pequeno;Rio de Janeiro - RJ;37;8,42;2024-07-03;False;True;4,3
+371;Outros;Médio;Brasília - DF;276;40,02;2024-11-04;True;True;4,9
+372;Outros;Pequeno;São Paulo - SP;59;38,67;2024-07-29;True;False;4,1
+373;Restaurante;Pequeno;Rio de Janeiro - RJ;67;13,18;2024-10-17;False;False;4,8
+374;E-commerce;Pequeno;São Paulo - SP;54;14,43;2024-08-08;False;True;4,5
+375;Outros;Médio;Brasília - DF;259;20,41;2024-09-04;False;False;3,0
+376;Varejo;Grande;São Paulo - SP;1103;27,05;2024-09-24;False;False;4,9
+377;E-commerce;Médio;Curitiba - PR;248;12,03;2024-06-02;False;False;4,2
+378;E-commerce;Pequeno;Belo Horizonte - MG;63;20,37;2024-02-26;False;True;3,1
+379;E-commerce;Pequeno;Belo Horizonte - MG;10;24,88;2024-12-13;False;True;3,8
+380;Varejo;Médio;São Paulo - SP;198;17,17;2024-06-19;False;False;4,3
+381;Restaurante;Médio;São Paulo - SP;169;11,89;2024-07-16;False;True;3,4
+382;Varejo;Médio;São Paulo - SP;133;30,98;2024-04-09;False;True;4,0
+383;Farmácia;Médio;São Paulo - SP;202;10,0;2024-07-22;False;False;4,3
+384;Restaurante;Pequeno;Rio de Janeiro - RJ;52;12,87;2024-09-10;False;True;4,6
+385;E-commerce;Pequeno;Rio de Janeiro - RJ;53;16,47;2024-02-22;False;True;4,3
+386;Varejo;Pequeno;Belo Horizonte - MG;24;39,73;2024-07-28;False;False;3,7
+387;Outros;Grande;Rio de Janeiro - RJ;802;25,39;2024-01-26;False;False;3,5
+388;Varejo;Médio;São Paulo - SP;256;18,53;2024-04-02;False;False;3,9
+389;Varejo;Pequeno;São Paulo - SP;43;30,36;2024-11-13;False;True;3,6
+390;Farmácia;Grande;Salvador - BA;581;13,84;2024-07-31;False;True;3,7
+391;Varejo;Médio;Brasília - DF;121;26,11;2024-11-26;True;False;4,1
+392;Varejo;Pequeno;Rio de Janeiro - RJ;41;32,87;2024-01-28;False;False;2,8
+393;Restaurante;Grande;São Paulo - SP;464;16,41;2024-11-21;False;True;4,2
+394;Farmácia;Pequeno;Belo Horizonte - MG;30;10,0;2024-08-30;False;True;3,6
+395;E-commerce;Pequeno;Salvador - BA;51;12,74;2024-11-28;False;True;4,9
+396;E-commerce;Médio;Brasília - DF;217;16,03;2024-03-03;False;False;3,1
+397;Restaurante;Pequeno;São Paulo - SP;53;8,0;2024-07-30;False;False;3,9
+398;E-commerce;Pequeno;São Paulo - SP;57;22,82;2024-01-30;False;False;4,4
+399;E-commerce;Pequeno;São Paulo - SP;91;14,56;2024-12-29;False;True;3,0
+400;Varejo;Médio;Belo Horizonte - MG;194;20,98;2024-03-18;False;False;4,5
+401;E-commerce;Médio;São Paulo - SP;215;19,66;2024-07-17;True;False;4,4
+402;E-commerce;Médio;São Paulo - SP;188;10,0;2024-04-13;False;False;3,8
+403;Restaurante;Pequeno;São Paulo - SP;48;13,24;2024-09-26;False;False;5,0
+404;Farmácia;Pequeno;São Paulo - SP;15;15,5;2024-11-11;True;True;3,3
+405;Restaurante;Pequeno;São Paulo - SP;15;13,07;2024-06-24;False;True;4,0
+406;E-commerce;Pequeno;Brasília - DF;36;18,82;2024-01-21;False;True;3,9
+407;Farmácia;Pequeno;São Paulo - SP;55;11,83;2024-02-14;False;True;4,2
+408;Restaurante;Pequeno;São Paulo - SP;30;8,0;2024-07-15;False;True;3,6
+409;Restaurante;Médio;São Paulo - SP;109;9,26;2024-11-21;False;True;3,4
+410;E-commerce;Médio;São Paulo - SP;183;24,57;2024-01-25;False;True;4,1
+411;Varejo;Pequeno;São Paulo - SP;24;35,03;2024-01-12;False;True;4,4
+412;Restaurante;Pequeno;Curitiba - PR;60;14,12;2024-04-27;False;True;4,7
+413;Varejo;Médio;Brasília - DF;208;15,62;2024-01-17;True;True;4,3
+414;Farmácia;Médio;São Paulo - SP;214;10,0;2024-12-29;True;True;4,1
+415;E-commerce;Grande;Salvador - BA;968;10,0;2024-02-12;False;True;3,7
+416;Farmácia;Médio;Belo Horizonte - MG;80;11,78;2024-10-10;False;True;4,4
+417;Farmácia;Pequeno;São Paulo - SP;59;13,91;2024-02-15;False;True;3,8
+418;E-commerce;Médio;Rio de Janeiro - RJ;193;23,53;2024-01-08;False;True;4,3
+419;E-commerce;Grande;São Paulo - SP;722;10,87;2024-03-15;False;False;4,0
+420;Varejo;Médio;Belo Horizonte - MG;244;24,15;2024-12-06;False;True;4,3
+421;Restaurante;Pequeno;Belo Horizonte - MG;29;11,63;2024-06-06;False;True;4,9
+422;E-commerce;Pequeno;Belo Horizonte - MG;52;10,0;2024-02-18;False;False;5,0
+423;E-commerce;Pequeno;Curitiba - PR;50;17,63;2024-09-18;True;True;4,8
+424;E-commerce;Pequeno;Rio de Janeiro - RJ;31;23,55;2024-08-25;False;True;3,8
+425;Varejo;Pequeno;Rio de Janeiro - RJ;54;26,9;2024-07-29;True;False;5,0
+426;Varejo;Pequeno;Rio de Janeiro - RJ;39;25,34;2024-07-20;True;True;4,4
+427;Varejo;Pequeno;São Paulo - SP;54;22,03;2024-02-09;False;True;4,1
+428;Outros;Pequeno;São Paulo - SP;61;29,31;2024-08-12;True;True;4,4
+429;Outros;Pequeno;Belo Horizonte - MG;56;17,5;2024-03-05;False;True;3,7
+430;Farmácia;Pequeno;Rio de Janeiro - RJ;52;12,32;2024-03-19;True;True;3,8
+431;Varejo;Médio;São Paulo - SP;131;30,24;2024-08-18;False;True;4,0
+432;E-commerce;Pequeno;Rio de Janeiro - RJ;36;20,06;2024-10-30;False;False;4,0
+433;Outros;Grande;São Paulo - SP;812;35,18;2024-06-10;True;True;3,9
+434;E-commerce;Médio;Belo Horizonte - MG;292;21,17;2024-10-18;False;False;3,5
+435;Farmácia;Pequeno;São Paulo - SP;47;18,89;2024-12-01;False;True;4,5
+436;E-commerce;Pequeno;Belo Horizonte - MG;51;22,05;2024-04-09;True;False;4,8
+437;E-commerce;Médio;São Paulo - SP;209;27,89;2024-04-06;True;True;3,7
+438;Varejo;Pequeno;Belo Horizonte - MG;31;36,89;2024-09-24;False;False;4,1
+439;Varejo;Pequeno;Rio de Janeiro - RJ;24;15,6;2024-03-12;False;False;4,7
+440;Varejo;Médio;São Paulo - SP;229;22,51;2024-07-19;False;True;4,7
+441;E-commerce;Médio;São Paulo - SP;210;18,26;2024-08-11;False;True;4,5
+442;E-commerce;Pequeno;São Paulo - SP;65;17,54;2024-01-28;False;True;3,5
+443;Outros;Médio;Belo Horizonte - MG;204;15,24;2024-03-22;True;True;4,4
+444;E-commerce;Médio;Brasília - DF;145;18,09;2024-06-20;False;False;4,2
+445;Outros;Pequeno;São Paulo - SP;74;46,49;2024-06-07;False;True;4,2
+446;E-commerce;Pequeno;Brasília - DF;77;28,52;2024-10-26;False;True;2,7
+447;Varejo;Pequeno;São Paulo - SP;38;36,43;2024-09-04;False;True;3,6
+448;E-commerce;Médio;Rio de Janeiro - RJ;211;17,7;2024-04-19;True;False;4,4
+449;E-commerce;Pequeno;São Paulo - SP;29;10,0;2024-11-23;False;False;2,9
+450;Varejo;Pequeno;Brasília - DF;60;42,67;2024-03-23;True;True;4,7
+451;E-commerce;Médio;Belo Horizonte - MG;241;16,18;2024-02-03;False;False;4,0
+452;Outros;Médio;Curitiba - PR;109;21,07;2024-05-18;False;True;5,0
+453;Outros;Pequeno;Rio de Janeiro - RJ;82;39,94;2024-05-02;False;True;4,1
+454;Restaurante;Pequeno;Brasília - DF;50;21,7;2024-11-21;True;False;4,5
+455;Varejo;Médio;São Paulo - SP;194;27,86;2024-09-17;False;False;4,5
+456;Varejo;Pequeno;São Paulo - SP;59;33,49;2024-04-28;False;False;4,5
+457;Restaurante;Médio;Rio de Janeiro - RJ;223;9,16;2024-07-07;False;False;3,8
+458;Restaurante;Médio;Curitiba - PR;230;14,1;2024-04-30;False;True;3,5
+459;Outros;Médio;Curitiba - PR;175;29,58;2024-09-07;False;False;3,9
+460;E-commerce;Médio;Rio de Janeiro - RJ;161;23,53;2024-04-04;False;True;3,9
+461;Varejo;Pequeno;Belo Horizonte - MG;40;40,05;2024-11-04;True;True;3,7
+462;Restaurante;Pequeno;Belo Horizonte - MG;54;9,36;2024-08-18;False;True;3,4
+463;E-commerce;Pequeno;Belo Horizonte - MG;38;19,71;2024-01-09;False;True;4,4
+464;E-commerce;Pequeno;Rio de Janeiro - RJ;33;16,47;2024-04-22;False;True;4,0
+465;Varejo;Pequeno;Brasília - DF;54;39,67;2024-05-12;False;False;4,3
+466;Restaurante;Médio;Rio de Janeiro - RJ;271;10,06;2024-02-15;False;False;4,8
+467;Outros;Pequeno;Curitiba - PR;78;22,44;2024-07-12;True;False;4,3
+468;E-commerce;Pequeno;Curitiba - PR;11;16,2;2024-11-11;False;False;4,0
+469;E-commerce;Pequeno;Curitiba - PR;55;15,23;2024-01-08;True;False;3,0
+470;Farmácia;Pequeno;São Paulo - SP;46;10,0;2024-01-27;False;False;3,2
+471;Varejo;Pequeno;São Paulo - SP;84;28,08;2024-04-06;False;False;3,6
+472;Varejo;Pequeno;Salvador - BA;34;21,6;2024-10-16;False;True;3,9
+473;Farmácia;Pequeno;Salvador - BA;73;11,4;2024-10-02;False;True;3,3
+474;E-commerce;Grande;Belo Horizonte - MG;715;18,93;2024-08-09;False;True;3,5
+475;E-commerce;Pequeno;Belo Horizonte - MG;72;17,83;2024-01-12;False;False;3,2
+476;E-commerce;Pequeno;Rio de Janeiro - RJ;98;13,5;2024-03-10;True;False;4,1
+477;E-commerce;Médio;Brasília - DF;216;22,55;2024-03-22;False;False;5,0
+478;Varejo;Médio;São Paulo - SP;300;23,02;2024-06-15;False;True;4,1
+479;Varejo;Pequeno;Curitiba - PR;64;21,17;2024-06-12;False;False;4,8
+480;E-commerce;Pequeno;Belo Horizonte - MG;67;15,12;2024-06-14;False;False;4,0
+481;Restaurante;Pequeno;Curitiba - PR;20;10,33;2024-04-22;False;False;4,5
+482;Restaurante;Médio;Salvador - BA;236;14,89;2024-03-26;True;True;4,9
+483;E-commerce;Médio;Curitiba - PR;386;21,78;2024-07-11;True;False;3,6
+484;Restaurante;Pequeno;Belo Horizonte - MG;47;12,31;2024-10-14;True;False;4,1
+485;Restaurante;Pequeno;São Paulo - SP;54;14,34;2024-04-02;False;True;3,8
+486;Varejo;Médio;Rio de Janeiro - RJ;252;33,15;2024-11-26;False;True;3,6
+487;Varejo;Médio;Curitiba - PR;183;17,77;2024-07-18;False;True;5,0
+488;Varejo;Médio;São Paulo - SP;301;12,0;2024-09-30;False;True;3,7
+489;E-commerce;Pequeno;São Paulo - SP;46;16,63;2024-01-05;False;True;4,0
+490;E-commerce;Pequeno;São Paulo - SP;20;25,38;2024-03-18;True;True;4,5
+491;Restaurante;Pequeno;Salvador - BA;35;12,97;2024-06-14;True;True;3,9
+492;Varejo;Pequeno;Rio de Janeiro - RJ;65;25,45;2024-10-03;False;False;4,7
+493;E-commerce;Pequeno;São Paulo - SP;72;20,92;2024-07-23;False;False;2,8
+494;Outros;Pequeno;Rio de Janeiro - RJ;63;14,12;2024-03-01;False;True;4,0
+495;Varejo;Grande;São Paulo - SP;909;20,42;2024-01-03;False;False;4,5
+496;Varejo;Pequeno;Belo Horizonte - MG;12;32,45;2024-09-18;True;True;4,4
+497;E-commerce;Grande;Belo Horizonte - MG;1166;23,66;2024-08-07;True;True;4,3
+498;Restaurante;Médio;Belo Horizonte - MG;192;10,02;2024-02-20;False;False;5,0
+499;Restaurante;Pequeno;Brasília - DF;42;19,34;2024-12-22;True;True;3,7
+500;Restaurante;Grande;Brasília - DF;680;14,08;2024-02-02;True;True;3,2
+501;Restaurante;Grande;São Paulo - SP;812;11,46;2024-12-29;False;True;2,9
+502;Restaurante;Médio;São Paulo - SP;269;10,7;2024-02-14;False;True;3,6
+503;E-commerce;Pequeno;Belo Horizonte - MG;34;11,28;2024-12-03;True;False;3,6
+504;Varejo;Pequeno;São Paulo - SP;68;30,15;2024-05-25;False;False;3,6
+505;E-commerce;Pequeno;São Paulo - SP;39;19,01;2024-09-05;False;True;3,4
+506;Restaurante;Pequeno;Brasília - DF;35;10,68;2024-05-22;False;True;5,0
+507;E-commerce;Pequeno;São Paulo - SP;40;18,32;2024-10-28;False;True;4,3
+508;Restaurante;Pequeno;Salvador - BA;61;12,08;2024-07-19;False;True;4,6
+509;Varejo;Médio;Curitiba - PR;243;35,63;2024-06-05;False;False;5,0
+510;Outros;Pequeno;Belo Horizonte - MG;56;25,36;2024-02-16;True;True;3,4
+511;Farmácia;Médio;São Paulo - SP;211;13,81;2024-11-30;False;False;5,0
+512;E-commerce;Grande;Salvador - BA;460;23,52;2024-08-25;False;True;3,3
+513;E-commerce;Médio;Curitiba - PR;189;23,76;2024-07-19;True;True;4,5
+514;E-commerce;Pequeno;São Paulo - SP;37;15,54;2024-08-15;False;True;4,5
+515;Farmácia;Médio;Belo Horizonte - MG;193;14,84;2024-07-24;False;True;3,7
+516;Outros;Pequeno;Rio de Janeiro - RJ;27;25,72;2024-02-11;False;True;4,1
+517;Restaurante;Pequeno;Belo Horizonte - MG;67;9,7;2024-05-10;True;False;3,7
+518;Varejo;Pequeno;São Paulo - SP;57;32,0;2024-01-06;False;False;4,1
+519;Farmácia;Pequeno;Rio de Janeiro - RJ;83;12,12;2024-01-11;False;True;3,2
+520;Varejo;Pequeno;Belo Horizonte - MG;46;18,8;2024-12-24;False;True;4,0
+521;Farmácia;Pequeno;Curitiba - PR;29;19,35;2024-03-05;False;False;4,2
+522;Varejo;Pequeno;São Paulo - SP;49;19,6;2024-05-28;True;True;4,5
+523;E-commerce;Pequeno;Salvador - BA;57;15,24;2024-09-05;False;True;3,8
+524;Outros;Pequeno;Curitiba - PR;63;27,93;2024-08-18;False;False;4,5
+525;Varejo;Pequeno;Rio de Janeiro - RJ;52;12,0;2024-12-07;False;False;3,7
+526;Restaurante;Pequeno;São Paulo - SP;23;12,33;2024-12-19;True;True;5,0
+527;E-commerce;Pequeno;Belo Horizonte - MG;45;20,83;2024-12-05;False;True;3,7
+528;Varejo;Médio;Belo Horizonte - MG;181;33,46;2024-08-21;False;False;5,0
+529;Restaurante;Pequeno;São Paulo - SP;45;14,18;2024-05-03;False;False;3,0
+530;E-commerce;Pequeno;São Paulo - SP;28;18,44;2024-05-09;False;False;5,0
+531;E-commerce;Pequeno;Brasília - DF;52;11,71;2024-09-12;False;True;2,5
+532;Restaurante;Pequeno;Curitiba - PR;25;16,71;2024-06-03;False;True;2,8
+533;Farmácia;Pequeno;Rio de Janeiro - RJ;19;10,0;2024-06-28;False;False;3,8
+534;E-commerce;Médio;Curitiba - PR;260;15,45;2024-02-01;False;True;3,4
+535;Varejo;Pequeno;Brasília - DF;61;28,32;2024-05-07;False;False;5,0
+536;Outros;Pequeno;Belo Horizonte - MG;14;16,48;2024-04-03;False;True;4,1
+537;Varejo;Médio;Belo Horizonte - MG;116;44,82;2024-05-25;True;False;3,8
+538;Varejo;Pequeno;Rio de Janeiro - RJ;67;16,8;2024-03-11;False;True;4,8
+539;Restaurante;Médio;Belo Horizonte - MG;260;14,46;2024-01-10;False;True;3,4
+540;Outros;Pequeno;Rio de Janeiro - RJ;24;12,0;2024-07-03;False;False;3,5
+541;Farmácia;Pequeno;Brasília - DF;48;10,0;2024-03-02;True;False;3,4
+542;E-commerce;Pequeno;Salvador - BA;44;10,0;2024-03-27;False;False;4,3
+543;Farmácia;Pequeno;Brasília - DF;66;13,76;2024-07-20;False;True;4,1
+544;E-commerce;Pequeno;Brasília - DF;39;18,25;2024-08-13;False;True;4,1
+545;Farmácia;Médio;Belo Horizonte - MG;176;17,66;2024-05-14;False;True;4,7
+546;Restaurante;Pequeno;São Paulo - SP;58;9,93;2024-09-04;False;True;4,3
+547;E-commerce;Médio;Curitiba - PR;224;16,35;2024-06-25;False;True;4,9
+548;Varejo;Pequeno;São Paulo - SP;11;12,0;2024-07-18;False;False;5,0
+549;Varejo;Médio;Curitiba - PR;150;33,82;2024-02-02;False;True;4,3
+550;E-commerce;Médio;Salvador - BA;207;10,0;2024-08-12;False;True;4,1
+551;Restaurante;Pequeno;Curitiba - PR;63;13,21;2024-04-27;False;True;4,3
+552;Outros;Pequeno;São Paulo - SP;42;26,64;2024-09-05;False;True;3,8
+553;E-commerce;Pequeno;Brasília - DF;55;14,48;2024-04-19;False;False;2,7
+554;Farmácia;Pequeno;São Paulo - SP;40;20,74;2024-05-12;False;True;4,5
+555;Varejo;Pequeno;Belo Horizonte - MG;47;32,39;2024-06-02;False;True;4,1
+556;Varejo;Grande;Belo Horizonte - MG;738;37,03;2024-10-25;False;False;3,9
+557;E-commerce;Pequeno;São Paulo - SP;25;20,43;2024-06-16;True;False;3,8
+558;E-commerce;Médio;São Paulo - SP;223;20,35;2024-08-26;False;False;4,2
+559;Varejo;Grande;Rio de Janeiro - RJ;687;28,43;2024-03-04;True;True;3,4
+560;E-commerce;Pequeno;São Paulo - SP;68;15,2;2024-02-04;False;True;4,1
+561;Varejo;Pequeno;Rio de Janeiro - RJ;68;34,33;2024-07-22;False;True;4,4
+562;Restaurante;Médio;São Paulo - SP;188;14,46;2024-12-20;False;True;4,4
+563;E-commerce;Pequeno;São Paulo - SP;31;23,26;2024-06-14;True;True;3,4
+564;Farmácia;Médio;São Paulo - SP;252;14,63;2024-07-31;False;False;3,7
+565;E-commerce;Grande;Rio de Janeiro - RJ;1030;15,24;2024-09-03;False;True;5,0
+566;E-commerce;Médio;São Paulo - SP;141;12,26;2024-01-11;True;True;3,8
+567;Varejo;Médio;Belo Horizonte - MG;100;18,85;2024-07-28;False;False;4,5
+568;Varejo;Pequeno;Belo Horizonte - MG;41;31,93;2024-10-19;True;True;4,9
+569;E-commerce;Pequeno;São Paulo - SP;58;14,45;2024-03-24;False;True;4,2
+570;E-commerce;Pequeno;Rio de Janeiro - RJ;44;26,27;2024-08-29;False;False;4,5
+571;Outros;Médio;São Paulo - SP;242;28,86;2024-07-24;False;True;4,0
+572;Restaurante;Pequeno;São Paulo - SP;78;18,75;2024-10-26;False;False;4,2
+573;E-commerce;Pequeno;São Paulo - SP;40;21,04;2024-07-31;False;True;3,5
+574;Varejo;Grande;São Paulo - SP;590;17,05;2024-05-09;False;True;4,6
+575;Varejo;Pequeno;Rio de Janeiro - RJ;34;34,87;2024-10-16;True;False;5,0
+576;E-commerce;Pequeno;São Paulo - SP;44;22,67;2024-10-24;True;True;3,1
+577;Restaurante;Pequeno;São Paulo - SP;11;15,88;2024-11-26;False;True;3,8
+578;Outros;Médio;Salvador - BA;237;30,07;2024-09-24;False;True;4,6
+579;Restaurante;Médio;São Paulo - SP;177;8,0;2024-02-27;True;False;3,7
+580;Restaurante;Médio;São Paulo - SP;246;11,76;2024-08-27;False;False;4,0
+581;Restaurante;Pequeno;São Paulo - SP;40;8,0;2024-10-13;False;True;5,0
+582;E-commerce;Grande;Brasília - DF;916;16,94;2024-04-08;True;False;4,9
+583;Farmácia;Médio;São Paulo - SP;183;17,38;2024-06-26;False;False;4,0
+584;E-commerce;Médio;Salvador - BA;321;23,8;2024-04-11;True;True;3,9
+585;Restaurante;Médio;Rio de Janeiro - RJ;123;12,45;2024-08-11;False;False;5,0
+586;E-commerce;Pequeno;São Paulo - SP;46;19,58;2024-05-31;False;False;4,2
+587;Varejo;Médio;São Paulo - SP;272;15,43;2024-11-23;False;True;3,7
+588;Outros;Pequeno;Belo Horizonte - MG;40;30,03;2024-10-12;False;True;4,6
+589;E-commerce;Médio;Belo Horizonte - MG;156;18,95;2024-03-06;True;True;4,3
+590;Varejo;Médio;Belo Horizonte - MG;223;36,35;2024-04-11;False;True;4,5
+591;Varejo;Médio;Salvador - BA;288;17,19;2024-12-03;False;True;4,3
+592;Outros;Pequeno;São Paulo - SP;21;36,18;2024-04-28;False;True;4,7
+593;Varejo;Grande;Rio de Janeiro - RJ;672;20,79;2024-03-04;True;True;3,5
+594;Varejo;Médio;Brasília - DF;336;28,5;2024-08-06;False;True;3,6
+595;Varejo;Médio;Rio de Janeiro - RJ;126;25,98;2024-11-30;False;True;4,1
+596;E-commerce;Pequeno;Belo Horizonte - MG;63;18,99;2024-03-29;False;False;3,6
+597;E-commerce;Médio;São Paulo - SP;123;17,28;2024-06-15;False;True;3,4
+598;Varejo;Grande;Rio de Janeiro - RJ;825;22,74;2024-10-02;False;False;4,0
+599;E-commerce;Pequeno;Rio de Janeiro - RJ;43;22,93;2024-06-17;False;True;4,0
+600;Restaurante;Pequeno;São Paulo - SP;29;13,46;2024-07-22;False;False;4,8
+601;Restaurante;Grande;São Paulo - SP;657;8,0;2024-08-08;False;False;3,8
+602;E-commerce;Médio;São Paulo - SP;147;18,26;2024-02-03;False;False;3,7
+603;Varejo;Médio;Rio de Janeiro - RJ;103;25,62;2024-02-27;False;True;4,9
+604;E-commerce;Médio;São Paulo - SP;188;21,25;2024-03-09;True;True;4,2
+605;Varejo;Grande;Rio de Janeiro - RJ;707;24,18;2024-03-11;False;True;4,3
+606;E-commerce;Grande;Rio de Janeiro - RJ;917;11,17;2024-07-22;False;False;4,3
+607;Restaurante;Médio;Brasília - DF;271;9,48;2024-06-24;True;True;3,2
+608;E-commerce;Pequeno;Brasília - DF;49;14,92;2024-03-13;False;True;3,9
+609;Restaurante;Pequeno;Curitiba - PR;58;13,8;2024-12-30;False;False;3,3
+610;Restaurante;Pequeno;São Paulo - SP;11;8,0;2024-04-22;False;False;4,6
+611;Restaurante;Pequeno;São Paulo - SP;56;13,87;2024-05-07;False;False;3,9
+612;Farmácia;Médio;Curitiba - PR;230;16,74;2024-09-03;False;True;3,4
+613;Varejo;Médio;Rio de Janeiro - RJ;255;30,48;2024-05-09;False;True;4,9
+614;Outros;Médio;Belo Horizonte - MG;92;26,22;2024-11-08;False;False;4,6
+615;E-commerce;Médio;Rio de Janeiro - RJ;257;16,19;2024-03-27;False;False;3,6
+616;E-commerce;Pequeno;São Paulo - SP;17;27,76;2024-04-16;False;True;4,4
+617;Varejo;Médio;São Paulo - SP;259;25,55;2024-05-06;False;True;3,4
+618;Farmácia;Pequeno;São Paulo - SP;65;20,16;2024-02-07;False;False;3,7
+619;Varejo;Pequeno;Rio de Janeiro - RJ;28;19,23;2024-08-28;False;True;5,0
+620;Farmácia;Pequeno;Rio de Janeiro - RJ;64;18,16;2024-08-28;True;True;5,0
+621;Varejo;Pequeno;São Paulo - SP;41;16,15;2024-08-03;False;False;4,5
+622;Varejo;Pequeno;São Paulo - SP;33;32,05;2024-10-30;False;True;3,1
+623;Restaurante;Pequeno;São Paulo - SP;65;17,96;2024-05-08;False;False;4,5
+624;Restaurante;Pequeno;São Paulo - SP;33;13,75;2024-01-23;False;True;3,9
+625;Restaurante;Médio;Rio de Janeiro - RJ;212;11,9;2024-10-24;False;True;3,8
+626;Restaurante;Pequeno;São Paulo - SP;74;13,35;2024-07-31;False;True;4,7
+627;Restaurante;Pequeno;São Paulo - SP;27;13,15;2024-08-08;False;False;4,3
+628;E-commerce;Médio;São Paulo - SP;292;17,27;2024-12-24;False;False;3,9
+629;E-commerce;Pequeno;São Paulo - SP;85;18,01;2024-05-08;False;True;4,4
+630;Varejo;Pequeno;Rio de Janeiro - RJ;45;24,54;2024-02-01;False;True;4,0
+631;Restaurante;Grande;Rio de Janeiro - RJ;587;10,79;2024-09-11;True;True;3,8
+632;E-commerce;Médio;São Paulo - SP;203;27,81;2024-05-17;False;True;3,5
+633;E-commerce;Pequeno;São Paulo - SP;44;20,16;2024-05-04;False;False;3,6
+634;E-commerce;Pequeno;Curitiba - PR;32;20,42;2024-02-06;False;True;3,6
+635;E-commerce;Médio;São Paulo - SP;168;27,81;2024-09-25;False;False;3,2
+636;Farmácia;Pequeno;São Paulo - SP;54;12,62;2024-10-10;False;False;3,7
+637;Varejo;Pequeno;Brasília - DF;39;14,88;2024-06-21;True;False;4,2
+638;Varejo;Pequeno;Rio de Janeiro - RJ;52;27,28;2024-06-21;True;True;3,8
+639;Farmácia;Pequeno;São Paulo - SP;54;12,94;2024-11-19;True;False;5,0
+640;E-commerce;Médio;Rio de Janeiro - RJ;263;15,34;2024-08-25;False;True;4,7
+641;E-commerce;Pequeno;Belo Horizonte - MG;10;10,0;2024-06-02;False;False;3,5
+642;Restaurante;Pequeno;Salvador - BA;78;13,37;2024-06-24;False;True;3,9
+643;Farmácia;Médio;São Paulo - SP;212;14,42;2024-07-22;False;True;4,0
+644;Restaurante;Pequeno;Belo Horizonte - MG;29;12,23;2024-11-30;False;True;3,8
+645;E-commerce;Médio;São Paulo - SP;195;21,57;2024-01-03;False;False;3,9
+646;Varejo;Pequeno;Rio de Janeiro - RJ;47;26,98;2024-04-12;False;False;3,4
+647;Outros;Pequeno;Brasília - DF;11;23,28;2024-05-07;True;False;3,7
+648;E-commerce;Pequeno;Rio de Janeiro - RJ;72;10,0;2024-05-31;True;True;3,5
+649;E-commerce;Pequeno;São Paulo - SP;47;20,7;2024-04-05;False;True;3,9
+650;Outros;Pequeno;Rio de Janeiro - RJ;25;20,2;2024-01-14;False;True;4,4
+651;E-commerce;Grande;Curitiba - PR;1191;17,41;2024-02-03;False;True;5,0
+652;Outros;Grande;São Paulo - SP;1105;35,82;2024-03-01;False;False;4,2
+653;E-commerce;Pequeno;Rio de Janeiro - RJ;72;14,64;2024-07-19;True;False;4,8
+654;E-commerce;Grande;Salvador - BA;1441;13,6;2024-12-12;False;True;3,8
+655;E-commerce;Pequeno;Salvador - BA;41;23,69;2024-09-04;False;False;3,5
+656;Varejo;Médio;São Paulo - SP;161;16,05;2024-06-12;False;True;4,5
+657;Restaurante;Médio;São Paulo - SP;126;9,6;2024-03-03;True;True;4,6
+658;E-commerce;Pequeno;Belo Horizonte - MG;27;14,68;2024-08-08;False;True;4,1
+659;Restaurante;Pequeno;São Paulo - SP;54;14,05;2024-07-06;True;False;4,6
+660;Restaurante;Grande;Rio de Janeiro - RJ;917;15,28;2024-01-17;False;True;3,9
+661;Varejo;Médio;Belo Horizonte - MG;240;28,19;2024-02-02;False;False;3,7
+662;E-commerce;Grande;Brasília - DF;530;19,03;2024-01-14;False;False;2,6
+663;Varejo;Médio;São Paulo - SP;196;20,56;2024-10-11;False;True;3,8
+664;Restaurante;Médio;Belo Horizonte - MG;243;13,04;2024-05-29;True;False;4,8
+665;Varejo;Grande;São Paulo - SP;1051;14,88;2024-01-08;False;True;4,0
+666;E-commerce;Médio;São Paulo - SP;176;17,67;2024-09-10;False;False;2,7
+667;Varejo;Pequeno;São Paulo - SP;11;26,49;2024-01-04;False;False;2,7
+668;Farmácia;Pequeno;Belo Horizonte - MG;53;20,86;2024-11-08;True;True;3,7
+669;Restaurante;Grande;Brasília - DF;662;10,03;2024-09-09;False;True;4,9
+670;Varejo;Pequeno;São Paulo - SP;86;29,95;2024-07-25;True;True;5,0
+671;Outros;Pequeno;São Paulo - SP;29;12,0;2024-05-31;False;False;4,1
+672;Restaurante;Grande;São Paulo - SP;775;16,44;2024-03-22;False;True;4,0
+673;E-commerce;Pequeno;Curitiba - PR;60;18,39;2024-03-06;False;False;4,1
+674;E-commerce;Pequeno;São Paulo - SP;53;14,62;2024-04-01;False;True;4,0
+675;Varejo;Médio;São Paulo - SP;253;23,19;2024-11-29;False;True;5,0
+676;E-commerce;Médio;Brasília - DF;173;15,74;2024-03-14;False;False;4,5
+677;E-commerce;Médio;Rio de Janeiro - RJ;152;12,97;2024-07-19;False;False;4,3
+678;E-commerce;Grande;Rio de Janeiro - RJ;991;23,08;2024-11-07;False;True;4,2
+679;Restaurante;Pequeno;São Paulo - SP;46;8,0;2024-03-29;True;True;4,3
+680;Varejo;Pequeno;Rio de Janeiro - RJ;47;27,88;2024-05-25;False;True;4,1
+681;Restaurante;Médio;Belo Horizonte - MG;186;14,23;2024-04-16;True;True;4,4
+682;Varejo;Pequeno;Curitiba - PR;41;38,09;2024-06-10;False;True;3,0
+683;Varejo;Pequeno;São Paulo - SP;73;15,26;2024-12-29;False;False;3,5
+684;Farmácia;Grande;Brasília - DF;528;13,59;2024-03-02;False;True;4,5
+685;Outros;Médio;Belo Horizonte - MG;130;35,15;2024-12-20;False;True;3,0
+686;Varejo;Médio;São Paulo - SP;118;29,78;2024-05-02;True;True;4,4
+687;Varejo;Médio;Brasília - DF;250;16,96;2024-06-25;False;True;4,0
+688;Varejo;Pequeno;São Paulo - SP;67;27,35;2024-12-30;False;True;4,3
+689;E-commerce;Pequeno;Belo Horizonte - MG;71;18,62;2024-11-27;True;False;4,0
+690;Restaurante;Pequeno;Curitiba - PR;86;14,1;2024-01-09;False;False;4,5
+691;E-commerce;Pequeno;Belo Horizonte - MG;64;18,46;2024-04-23;True;False;4,3
+692;E-commerce;Grande;São Paulo - SP;898;23,73;2024-04-21;False;True;5,0
+693;E-commerce;Médio;Rio de Janeiro - RJ;137;11,09;2024-12-26;False;False;3,9
+694;Farmácia;Grande;São Paulo - SP;828;20,36;2024-10-19;True;True;4,1
+695;E-commerce;Pequeno;Rio de Janeiro - RJ;40;18,08;2024-01-04;False;False;4,8
+696;E-commerce;Grande;São Paulo - SP;695;15,46;2024-03-10;True;True;3,7
+697;Farmácia;Pequeno;Rio de Janeiro - RJ;68;14,1;2024-10-10;False;True;3,6
+698;Restaurante;Médio;Rio de Janeiro - RJ;234;11,44;2024-05-02;False;True;2,5
+699;Restaurante;Grande;São Paulo - SP;942;11,78;2024-04-26;True;False;4,8
+700;Varejo;Médio;Salvador - BA;121;28,98;2024-06-08;False;False;3,1
+701;E-commerce;Médio;São Paulo - SP;190;25,21;2024-06-19;False;True;4,3
+702;Varejo;Pequeno;Rio de Janeiro - RJ;43;13,63;2024-04-03;False;True;5,0
+703;Restaurante;Médio;Rio de Janeiro - RJ;256;9,2;2024-07-18;False;False;4,3
+704;Restaurante;Médio;Belo Horizonte - MG;190;8,0;2024-01-31;True;False;4,0
+705;Varejo;Médio;São Paulo - SP;296;18,12;2024-06-15;False;True;3,6
+706;Varejo;Pequeno;São Paulo - SP;34;18,74;2024-05-23;False;False;4,9
+707;Farmácia;Médio;São Paulo - SP;198;21,04;2024-10-05;False;False;4,3
+708;Varejo;Grande;Belo Horizonte - MG;813;12,0;2024-10-18;False;False;5,0
+709;Varejo;Pequeno;São Paulo - SP;39;41,28;2024-10-11;True;True;3,9
+710;Varejo;Grande;Salvador - BA;840;25,09;2024-01-13;False;True;4,0
+711;Restaurante;Pequeno;São Paulo - SP;36;13,42;2024-07-09;False;False;5,0
+712;Farmácia;Pequeno;Belo Horizonte - MG;30;18,21;2024-09-07;False;True;3,5
+713;Restaurante;Médio;Rio de Janeiro - RJ;135;10,62;2024-02-29;True;True;3,9
+714;Farmácia;Pequeno;São Paulo - SP;72;19,39;2024-11-06;False;True;4,7
+715;E-commerce;Médio;Belo Horizonte - MG;151;22,98;2024-06-20;False;True;4,6
+716;Restaurante;Pequeno;São Paulo - SP;59;9,3;2024-05-30;True;True;3,8
+717;Farmácia;Pequeno;São Paulo - SP;35;14,44;2024-02-09;False;True;3,5
+718;Farmácia;Pequeno;Belo Horizonte - MG;81;16,95;2024-03-29;False;False;4,6
+719;E-commerce;Pequeno;Curitiba - PR;31;18,94;2024-04-05;False;True;4,1
+720;Restaurante;Médio;Belo Horizonte - MG;198;12,78;2024-11-01;True;False;4,5
+721;E-commerce;Pequeno;São Paulo - SP;29;22,16;2024-07-10;False;False;4,9
+722;Restaurante;Pequeno;Rio de Janeiro - RJ;10;8,73;2024-03-26;False;False;3,6
+723;Restaurante;Pequeno;Salvador - BA;97;11,38;2024-11-24;False;True;3,8
+724;Restaurante;Grande;São Paulo - SP;526;19,36;2024-02-04;False;True;4,2
+725;E-commerce;Pequeno;Curitiba - PR;56;10,0;2024-04-05;False;False;4,2
+726;Outros;Grande;Brasília - DF;300;41,06;2024-01-14;False;True;3,7
+727;Varejo;Pequeno;Salvador - BA;22;25,59;2024-08-20;False;True;4,1
+728;E-commerce;Pequeno;São Paulo - SP;35;26,41;2024-09-26;True;True;3,9
+729;Farmácia;Pequeno;São Paulo - SP;72;24,76;2024-12-29;False;True;4,9
+730;Varejo;Pequeno;São Paulo - SP;49;25,45;2024-08-27;False;False;5,0
+731;Outros;Médio;Rio de Janeiro - RJ;211;28,08;2024-04-16;False;True;3,8
+732;Varejo;Pequeno;Salvador - BA;43;22,57;2024-11-08;True;True;3,4
+733;Varejo;Pequeno;São Paulo - SP;64;17,18;2024-12-31;False;False;3,1
+734;Varejo;Pequeno;Belo Horizonte - MG;35;32,25;2024-01-22;False;True;4,1
+735;E-commerce;Pequeno;Rio de Janeiro - RJ;67;18,79;2024-03-29;False;True;3,9
+736;Restaurante;Pequeno;São Paulo - SP;20;12,52;2024-02-17;False;True;4,2
+737;E-commerce;Pequeno;Salvador - BA;69;14,16;2024-03-31;False;True;4,6
+738;E-commerce;Médio;São Paulo - SP;156;24,86;2024-02-02;True;False;4,9
+739;E-commerce;Pequeno;São Paulo - SP;56;20,83;2024-12-16;True;True;5,0
+740;E-commerce;Pequeno;Belo Horizonte - MG;34;20,22;2024-03-06;False;True;4,6
+741;Restaurante;Pequeno;Rio de Janeiro - RJ;65;12,66;2024-02-15;False;False;2,9
+742;E-commerce;Pequeno;São Paulo - SP;40;11,52;2024-10-21;False;True;5,0
+743;Restaurante;Pequeno;Rio de Janeiro - RJ;47;11,08;2024-01-16;False;False;5,0
+744;Varejo;Pequeno;São Paulo - SP;68;41,16;2024-05-18;False;True;3,5
+745;Varejo;Pequeno;Brasília - DF;52;27,96;2024-04-09;False;False;4,0
+746;Varejo;Pequeno;São Paulo - SP;63;13,29;2024-04-06;True;False;5,0
+747;E-commerce;Pequeno;Rio de Janeiro - RJ;84;20,0;2024-06-11;False;True;4,3
+748;Farmácia;Pequeno;São Paulo - SP;56;15,31;2024-04-03;False;True;3,4
+749;Restaurante;Pequeno;Brasília - DF;10;14,91;2024-02-01;False;False;3,4
+750;Varejo;Pequeno;Brasília - DF;17;17,51;2024-01-24;False;True;3,3
+751;Farmácia;Pequeno;Belo Horizonte - MG;63;17,44;2024-06-30;False;True;3,3
+752;Restaurante;Pequeno;São Paulo - SP;17;14,36;2024-07-20;False;True;4,6
+753;Varejo;Médio;São Paulo - SP;120;22,5;2024-04-30;False;False;4,4
+754;Varejo;Médio;Rio de Janeiro - RJ;124;25,08;2024-11-01;False;True;3,2
+755;Farmácia;Médio;Belo Horizonte - MG;200;15,53;2024-04-29;False;True;5,0
+756;E-commerce;Pequeno;Rio de Janeiro - RJ;10;11,43;2024-04-19;False;True;3,3
+757;Varejo;Pequeno;Belo Horizonte - MG;44;15,88;2024-01-15;False;False;3,4
+758;E-commerce;Médio;Rio de Janeiro - RJ;218;19,32;2024-02-15;False;False;3,5
+759;Outros;Grande;São Paulo - SP;853;28,8;2024-01-08;False;True;3,4
+760;E-commerce;Pequeno;São Paulo - SP;78;19,0;2024-03-16;False;False;4,7
+761;Restaurante;Médio;Belo Horizonte - MG;299;12,6;2024-03-21;False;True;3,6
+762;Farmácia;Pequeno;Brasília - DF;32;23,02;2024-07-26;False;True;3,0
+763;Varejo;Médio;Salvador - BA;124;21,42;2024-02-11;False;False;4,0
+764;Outros;Médio;Belo Horizonte - MG;269;12,0;2024-06-05;False;False;3,1
+765;Restaurante;Pequeno;Brasília - DF;22;13,42;2024-09-18;False;True;4,3
+766;Varejo;Pequeno;Curitiba - PR;32;28,66;2024-12-13;False;True;4,7
+767;E-commerce;Pequeno;Rio de Janeiro - RJ;46;23,57;2024-04-06;False;True;4,3
+768;E-commerce;Pequeno;São Paulo - SP;59;16,32;2024-09-28;False;True;4,3
+769;E-commerce;Médio;Brasília - DF;231;21,4;2024-10-13;False;False;4,3
+770;E-commerce;Grande;São Paulo - SP;815;18,47;2024-02-07;True;False;5,0
+771;E-commerce;Médio;Curitiba - PR;246;10,0;2024-03-08;False;True;3,3
+772;E-commerce;Médio;Belo Horizonte - MG;177;16,46;2024-05-11;True;False;3,7
+773;E-commerce;Pequeno;Belo Horizonte - MG;48;23,65;2024-09-17;False;True;4,6
+774;E-commerce;Pequeno;São Paulo - SP;64;25,74;2024-11-18;False;True;5,0
+775;Restaurante;Pequeno;São Paulo - SP;57;13,76;2024-03-23;False;True;3,7
+776;Varejo;Pequeno;São Paulo - SP;65;22,1;2024-08-13;False;False;4,2
+777;E-commerce;Médio;São Paulo - SP;111;18,44;2024-01-10;False;True;3,6
+778;Farmácia;Médio;Brasília - DF;84;14,27;2024-09-12;False;False;4,9
+779;Restaurante;Grande;Curitiba - PR;694;12,24;2024-05-23;False;True;4,0
+780;Restaurante;Médio;Curitiba - PR;226;15,17;2024-11-30;False;False;4,3
+781;Varejo;Grande;São Paulo - SP;753;36,6;2024-01-02;False;True;4,3
+782;Restaurante;Pequeno;Rio de Janeiro - RJ;55;17,12;2024-09-24;True;True;4,1
+783;E-commerce;Médio;Brasília - DF;205;16,73;2024-12-28;False;False;4,9
+784;Varejo;Pequeno;Salvador - BA;18;28,74;2024-03-20;False;False;4,5
+785;Restaurante;Pequeno;Rio de Janeiro - RJ;66;14,72;2024-04-23;False;False;3,8
+786;Outros;Pequeno;São Paulo - SP;57;20,67;2024-12-31;True;True;3,7
+787;E-commerce;Médio;Brasília - DF;174;16,0;2024-02-11;False;True;4,2
+788;Outros;Pequeno;Belo Horizonte - MG;53;28,04;2024-05-06;False;True;3,5
+789;Farmácia;Médio;Rio de Janeiro - RJ;130;20,08;2024-10-06;False;False;4,0
+790;Restaurante;Pequeno;Rio de Janeiro - RJ;61;11,03;2024-04-10;False;True;4,5
+791;E-commerce;Pequeno;Brasília - DF;59;10,0;2024-09-28;False;False;4,4
+792;E-commerce;Pequeno;São Paulo - SP;34;20,66;2024-07-06;False;True;3,8
+793;E-commerce;Pequeno;Salvador - BA;49;10,85;2024-04-30;False;True;4,2
+794;Farmácia;Pequeno;São Paulo - SP;70;17,64;2024-12-25;False;False;3,1
+795;Varejo;Médio;Belo Horizonte - MG;259;35,66;2024-11-13;False;False;4,0
+796;Varejo;Pequeno;Rio de Janeiro - RJ;35;17,42;2024-08-18;True;False;4,8
+797;Varejo;Pequeno;Curitiba - PR;57;23,88;2024-01-19;True;True;5,0
+798;Farmácia;Médio;Belo Horizonte - MG;159;10,0;2024-06-22;False;False;4,0
+799;Outros;Pequeno;São Paulo - SP;98;19,22;2024-04-29;True;True;3,4
+800;Restaurante;Pequeno;Rio de Janeiro - RJ;58;11,44;2024-11-06;False;False;3,1
+801;E-commerce;Pequeno;Rio de Janeiro - RJ;79;19,22;2024-10-11;True;False;3,7
+802;Outros;Grande;Rio de Janeiro - RJ;629;27,67;2024-05-14;True;False;4,1
+803;Outros;Pequeno;São Paulo - SP;68;29,0;2024-05-18;False;False;3,9
+804;Outros;Pequeno;Brasília - DF;29;16,49;2024-12-27;False;False;2,6
+805;E-commerce;Grande;Brasília - DF;1087;16,69;2024-12-06;False;True;4,0
+806;Farmácia;Médio;São Paulo - SP;190;17,32;2024-08-16;True;False;4,4
+807;Restaurante;Pequeno;Belo Horizonte - MG;42;8,61;2024-01-15;False;True;5,0
+808;E-commerce;Médio;São Paulo - SP;293;14,83;2024-01-27;False;True;3,4
+809;E-commerce;Grande;São Paulo - SP;1014;18,28;2024-10-06;False;True;3,9
+810;Varejo;Médio;Salvador - BA;208;28,38;2024-11-16;False;True;4,2
+811;Restaurante;Grande;Brasília - DF;603;14,34;2024-03-04;False;False;4,0
+812;Farmácia;Pequeno;Belo Horizonte - MG;35;17,2;2024-01-09;False;False;4,7
+813;E-commerce;Pequeno;Belo Horizonte - MG;52;13,72;2024-02-12;False;True;2,8
+814;Varejo;Pequeno;Rio de Janeiro - RJ;33;35,27;2024-11-14;True;True;5,0
+815;E-commerce;Pequeno;São Paulo - SP;44;14,64;2024-11-27;False;True;3,6
+816;Restaurante;Pequeno;Belo Horizonte - MG;91;10,96;2024-10-10;False;True;3,6
+817;Outros;Grande;Rio de Janeiro - RJ;892;27,49;2024-08-08;True;True;4,0
+818;E-commerce;Pequeno;São Paulo - SP;31;23,24;2024-10-11;False;True;3,9
+819;Outros;Grande;São Paulo - SP;708;26,25;2024-11-06;True;False;4,1
+820;Varejo;Pequeno;Belo Horizonte - MG;55;35,71;2024-05-20;True;True;4,1
+821;E-commerce;Pequeno;São Paulo - SP;38;18,99;2024-05-23;False;False;4,5
+822;E-commerce;Médio;Salvador - BA;114;13,23;2024-12-27;True;False;4,4
+823;Varejo;Médio;Belo Horizonte - MG;145;30,49;2024-05-22;True;False;4,0
+824;E-commerce;Pequeno;Curitiba - PR;61;31,16;2024-02-13;True;False;4,2
+825;E-commerce;Pequeno;São Paulo - SP;65;16,63;2024-10-12;True;False;3,6
+826;Varejo;Médio;São Paulo - SP;236;34,41;2024-08-21;False;True;3,8
+827;Varejo;Pequeno;São Paulo - SP;31;19,76;2024-10-14;False;True;4,5
+828;Varejo;Pequeno;São Paulo - SP;40;14,74;2024-07-07;False;True;4,3
+829;Varejo;Pequeno;Rio de Janeiro - RJ;64;44,36;2024-05-16;False;True;4,1
+830;E-commerce;Médio;Belo Horizonte - MG;291;26,29;2024-10-03;False;False;3,7
+831;E-commerce;Pequeno;Brasília - DF;72;16,48;2024-03-02;False;False;4,1
+832;Varejo;Médio;São Paulo - SP;146;22,76;2024-04-19;False;True;3,5
+833;E-commerce;Pequeno;Belo Horizonte - MG;73;10,0;2024-11-04;True;False;3,7
+834;E-commerce;Médio;Curitiba - PR;207;18,46;2024-09-01;True;False;4,0
+835;Farmácia;Pequeno;São Paulo - SP;62;14,55;2024-08-26;False;True;3,7
+836;E-commerce;Pequeno;São Paulo - SP;29;12,06;2024-09-05;False;True;3,9
+837;Farmácia;Pequeno;Curitiba - PR;63;19,41;2024-06-23;True;False;5,0
+838;E-commerce;Médio;São Paulo - SP;163;25,79;2024-11-15;True;True;4,2
+839;E-commerce;Pequeno;São Paulo - SP;15;17,29;2024-09-12;True;False;3,8
+840;Varejo;Pequeno;Belo Horizonte - MG;83;21,09;2024-01-06;False;True;4,2
+841;Outros;Pequeno;Brasília - DF;34;20,22;2024-05-07;True;True;3,7
+842;E-commerce;Pequeno;Rio de Janeiro - RJ;28;17,23;2024-07-10;True;False;4,4
+843;Varejo;Médio;São Paulo - SP;194;14,74;2024-12-09;True;False;4,2
+844;E-commerce;Pequeno;Curitiba - PR;36;13,76;2024-06-08;False;True;3,4
+845;E-commerce;Médio;Belo Horizonte - MG;151;34,7;2024-06-07;False;True;4,2
+846;E-commerce;Pequeno;Belo Horizonte - MG;70;23,03;2024-10-10;False;False;4,0
+847;E-commerce;Pequeno;São Paulo - SP;51;12,63;2024-09-06;False;False;4,7
+848;Outros;Pequeno;Salvador - BA;86;12,0;2024-05-22;True;True;4,1
+849;E-commerce;Pequeno;Rio de Janeiro - RJ;23;21,9;2024-08-08;False;True;4,3
+850;Restaurante;Pequeno;Curitiba - PR;14;8,34;2024-04-16;False;True;4,7
+851;Varejo;Pequeno;São Paulo - SP;71;15,06;2024-06-27;True;True;4,3
+852;E-commerce;Pequeno;Rio de Janeiro - RJ;60;18,95;2024-08-18;False;True;5,0
+853;Varejo;Pequeno;São Paulo - SP;25;13,35;2024-04-25;False;True;3,4
+854;Outros;Pequeno;Rio de Janeiro - RJ;26;33,98;2024-11-25;False;False;4,3
+855;E-commerce;Pequeno;São Paulo - SP;48;12,61;2024-11-14;False;True;4,6
+856;Outros;Pequeno;São Paulo - SP;35;20,31;2024-09-13;False;True;4,7
+857;E-commerce;Grande;Belo Horizonte - MG;684;18,28;2024-07-10;True;False;4,9
+858;Restaurante;Pequeno;Belo Horizonte - MG;42;14,15;2024-12-03;False;True;3,7
+859;E-commerce;Pequeno;Curitiba - PR;39;19,73;2024-03-02;False;True;4,5
+860;E-commerce;Médio;Belo Horizonte - MG;136;18,65;2024-06-01;True;True;3,6
+861;Restaurante;Médio;Curitiba - PR;194;16,18;2024-05-16;False;False;5,0
+862;Restaurante;Grande;Curitiba - PR;888;13,96;2024-11-09;False;True;2,8
+863;E-commerce;Pequeno;São Paulo - SP;64;27,92;2024-03-06;False;True;5,0
+864;Farmácia;Pequeno;Curitiba - PR;48;16,39;2024-03-27;False;True;3,6
+865;Varejo;Médio;São Paulo - SP;185;25,08;2024-10-29;True;False;4,1
+866;E-commerce;Pequeno;Salvador - BA;20;12,53;2024-10-08;False;True;3,0
+867;E-commerce;Grande;Brasília - DF;432;10,19;2024-03-19;True;True;3,8
+868;Varejo;Médio;São Paulo - SP;107;25,84;2024-09-26;False;True;4,8
+869;Farmácia;Médio;Curitiba - PR;199;12,7;2024-08-05;False;True;4,7
+870;Outros;Pequeno;São Paulo - SP;51;50,0;2024-07-12;False;False;3,8
+871;Outros;Pequeno;Brasília - DF;100;28,28;2024-12-12;False;True;4,1
+872;Varejo;Pequeno;Rio de Janeiro - RJ;54;28,01;2024-12-27;False;True;3,8
+873;Varejo;Grande;São Paulo - SP;1056;27,4;2024-08-21;True;False;3,7
+874;E-commerce;Médio;São Paulo - SP;294;26,52;2024-05-21;False;True;3,8
+875;E-commerce;Pequeno;Belo Horizonte - MG;31;26,13;2024-03-28;True;True;3,4
+876;Varejo;Pequeno;São Paulo - SP;55;25,77;2024-10-20;True;True;5,0
+877;Varejo;Grande;Curitiba - PR;476;30,07;2024-03-29;False;False;3,7
+878;Farmácia;Pequeno;São Paulo - SP;36;13,76;2024-09-18;False;False;4,2
+879;E-commerce;Médio;Rio de Janeiro - RJ;397;20,94;2024-12-25;False;True;3,5
+880;Restaurante;Pequeno;Belo Horizonte - MG;41;12,36;2024-04-04;True;True;3,8
+881;Restaurante;Grande;São Paulo - SP;391;14,65;2024-04-19;False;True;3,3
+882;Farmácia;Pequeno;Salvador - BA;74;10,0;2024-04-01;True;True;3,4
+883;Restaurante;Pequeno;Rio de Janeiro - RJ;86;8,79;2024-07-18;True;True;4,2
+884;Varejo;Pequeno;Brasília - DF;75;31,6;2024-02-18;False;False;3,6
+885;Restaurante;Pequeno;Belo Horizonte - MG;37;12,6;2024-10-14;True;True;4,6
+886;Outros;Pequeno;São Paulo - SP;47;30,34;2024-10-23;True;True;5,0
+887;Restaurante;Pequeno;São Paulo - SP;54;8,67;2024-01-22;True;True;3,9
+888;Farmácia;Grande;São Paulo - SP;658;11,12;2024-08-04;False;False;3,3
+889;Restaurante;Pequeno;Brasília - DF;74;12,2;2024-06-21;False;False;4,6
+890;Farmácia;Pequeno;Belo Horizonte - MG;41;23,3;2024-08-06;False;True;4,0
+891;E-commerce;Médio;Belo Horizonte - MG;229;25,48;2024-11-01;False;True;4,4
+892;E-commerce;Pequeno;São Paulo - SP;22;19,71;2024-02-11;False;True;4,0
+893;E-commerce;Grande;São Paulo - SP;782;16,6;2024-10-18;True;True;5,0
+894;E-commerce;Pequeno;São Paulo - SP;47;13,85;2024-04-04;False;False;3,2
+895;Varejo;Grande;São Paulo - SP;865;29,72;2024-04-14;False;True;3,1
+896;Restaurante;Médio;São Paulo - SP;200;8,73;2024-01-25;True;False;4,2
+897;E-commerce;Pequeno;São Paulo - SP;46;22,1;2024-10-23;False;True;4,2
+898;Varejo;Médio;São Paulo - SP;241;12,0;2024-06-04;False;False;4,0
+899;E-commerce;Pequeno;Rio de Janeiro - RJ;16;16,82;2024-10-13;False;True;3,2
+900;Varejo;Médio;Curitiba - PR;274;20,08;2024-12-15;False;False;4,3
+901;Farmácia;Médio;Brasília - DF;104;22,92;2024-08-28;False;True;5,0
+902;Restaurante;Médio;São Paulo - SP;80;8,0;2024-01-12;False;True;4,6
+903;Outros;Pequeno;São Paulo - SP;36;23,39;2024-10-09;True;False;4,4
+904;Farmácia;Pequeno;São Paulo - SP;48;15,47;2024-10-23;True;False;3,9
+905;Farmácia;Pequeno;São Paulo - SP;68;16,77;2024-02-09;False;False;4,8
+906;Restaurante;Pequeno;Belo Horizonte - MG;24;14,75;2024-05-27;False;True;4,2
+907;Restaurante;Grande;São Paulo - SP;574;16,63;2024-10-25;False;True;4,2
+908;Restaurante;Pequeno;Brasília - DF;36;15,99;2024-04-23;False;False;4,0
+909;E-commerce;Pequeno;Brasília - DF;32;11,84;2024-01-15;True;True;4,2
+910;Farmácia;Pequeno;Rio de Janeiro - RJ;38;17,48;2024-12-07;False;True;5,0
+911;Varejo;Pequeno;Salvador - BA;43;26,12;2024-07-31;False;True;4,3
+912;Outros;Médio;Rio de Janeiro - RJ;112;12,0;2024-06-22;True;True;4,5
+913;Farmácia;Pequeno;Brasília - DF;53;20,52;2024-03-07;True;True;4,5
+914;E-commerce;Pequeno;Brasília - DF;53;19,03;2024-02-07;False;True;3,7
+915;Restaurante;Pequeno;São Paulo - SP;57;14,5;2024-11-15;False;False;5,0
+916;Restaurante;Pequeno;São Paulo - SP;40;11,66;2024-07-07;False;False;4,6
+917;E-commerce;Pequeno;Rio de Janeiro - RJ;61;14,89;2024-03-12;False;True;4,3
+918;Farmácia;Pequeno;Belo Horizonte - MG;53;15,73;2024-10-05;True;True;4,1
+919;E-commerce;Médio;São Paulo - SP;191;15,86;2024-07-24;False;False;4,6
+920;E-commerce;Pequeno;São Paulo - SP;43;14,2;2024-05-25;False;False;4,1
+921;Restaurante;Pequeno;São Paulo - SP;88;10,9;2024-07-18;False;True;4,2
+922;E-commerce;Médio;Brasília - DF;162;19,2;2024-11-15;False;True;3,8
+923;Outros;Pequeno;São Paulo - SP;10;28,63;2024-02-11;True;True;4,1
+924;E-commerce;Médio;Rio de Janeiro - RJ;250;21,05;2024-07-20;False;True;5,0
+925;Restaurante;Pequeno;Brasília - DF;78;19,61;2024-01-04;False;True;4,2
+926;E-commerce;Pequeno;São Paulo - SP;42;12,15;2024-12-27;True;True;4,4
+927;Outros;Médio;Brasília - DF;157;12,0;2024-08-16;False;True;4,4
+928;Varejo;Pequeno;Salvador - BA;68;26,01;2024-11-14;False;True;5,0
+929;Restaurante;Grande;Brasília - DF;859;11,47;2024-07-27;False;True;5,0
+930;Varejo;Pequeno;Rio de Janeiro - RJ;46;29,45;2024-10-15;False;True;4,6
+931;Restaurante;Pequeno;Rio de Janeiro - RJ;39;12,52;2024-07-04;False;True;4,8
+932;Farmácia;Pequeno;Belo Horizonte - MG;69;15,66;2024-08-14;False;False;4,8
+933;E-commerce;Médio;Salvador - BA;226;18,36;2024-06-04;False;True;4,1
+934;Outros;Pequeno;São Paulo - SP;48;37,8;2024-06-26;False;False;3,5
+935;Outros;Médio;Rio de Janeiro - RJ;293;16,19;2024-11-30;False;True;4,0
+936;Outros;Médio;São Paulo - SP;235;22,35;2024-11-24;True;True;3,6
+937;Varejo;Pequeno;São Paulo - SP;46;29,04;2024-08-14;False;False;3,4
+938;Varejo;Pequeno;São Paulo - SP;50;26,52;2024-02-04;False;True;4,0
+939;Varejo;Grande;Rio de Janeiro - RJ;911;23,8;2024-10-15;False;True;4,5
+940;Varejo;Pequeno;Rio de Janeiro - RJ;60;25,83;2024-02-18;False;True;3,7
+941;Varejo;Médio;Rio de Janeiro - RJ;209;21,49;2024-12-23;False;True;4,4
+942;E-commerce;Pequeno;Rio de Janeiro - RJ;45;18,25;2024-06-13;False;False;5,0
+943;Varejo;Pequeno;Curitiba - PR;55;27,43;2024-10-19;False;False;4,7
+944;Restaurante;Médio;Rio de Janeiro - RJ;151;8,43;2024-09-15;False;True;3,6
+945;E-commerce;Pequeno;São Paulo - SP;92;16,5;2024-08-10;False;True;3,3
+946;E-commerce;Pequeno;Rio de Janeiro - RJ;62;12,7;2024-11-28;False;False;4,2
+947;Varejo;Pequeno;Curitiba - PR;83;37,35;2024-10-21;False;False;4,8
+948;Restaurante;Pequeno;Brasília - DF;50;14,72;2024-11-04;True;False;5,0
+949;Farmácia;Pequeno;São Paulo - SP;31;10,0;2024-04-18;True;False;2,7
+950;Farmácia;Pequeno;São Paulo - SP;27;13,52;2024-08-22;False;True;4,2
+951;Farmácia;Médio;São Paulo - SP;171;14,96;2024-12-20;False;False;3,4
+952;Varejo;Médio;Brasília - DF;80;32,42;2024-10-13;False;True;4,8
+953;Farmácia;Grande;São Paulo - SP;769;18,72;2024-02-10;False;False;4,3
+954;Restaurante;Pequeno;São Paulo - SP;87;10,37;2024-03-15;True;False;3,6
+955;Farmácia;Grande;São Paulo - SP;468;15,07;2024-01-07;False;True;5,0
+956;Restaurante;Grande;Rio de Janeiro - RJ;596;8,0;2024-04-26;False;True;4,7
+957;E-commerce;Pequeno;São Paulo - SP;66;21,74;2024-11-11;False;True;4,4
+958;E-commerce;Grande;São Paulo - SP;650;22,49;2024-06-09;False;False;3,8
+959;E-commerce;Médio;Salvador - BA;209;13,64;2024-04-02;False;False;4,0
+960;E-commerce;Pequeno;São Paulo - SP;39;13,59;2024-07-24;True;True;4,2
+961;Outros;Grande;São Paulo - SP;1024;31,23;2024-01-19;False;False;4,4
+962;Varejo;Médio;Salvador - BA;271;28,96;2024-07-13;False;False;4,5
+963;Outros;Pequeno;Rio de Janeiro - RJ;10;31,05;2024-03-28;True;True;3,8
+964;E-commerce;Pequeno;São Paulo - SP;68;23,34;2024-03-11;False;True;3,8
+965;Varejo;Pequeno;São Paulo - SP;53;22,96;2024-03-26;False;False;4,7
+966;E-commerce;Pequeno;São Paulo - SP;52;11,39;2024-02-01;False;True;5,0
+967;E-commerce;Pequeno;São Paulo - SP;59;18,84;2024-03-12;True;False;4,9
+968;E-commerce;Pequeno;São Paulo - SP;35;16,89;2024-11-19;True;True;4,3
+969;Varejo;Pequeno;Rio de Janeiro - RJ;14;37,43;2024-06-27;True;True;4,3
+970;Restaurante;Pequeno;Curitiba - PR;35;12,99;2024-05-05;True;True;4,2
+971;E-commerce;Pequeno;Rio de Janeiro - RJ;51;13,42;2024-03-24;False;False;3,9
+972;Varejo;Pequeno;São Paulo - SP;73;29,51;2024-05-30;False;True;4,4
+973;Varejo;Pequeno;Brasília - DF;56;33,28;2024-05-11;False;False;3,5
+974;E-commerce;Médio;Rio de Janeiro - RJ;117;14,32;2024-04-04;True;False;4,4
+975;E-commerce;Pequeno;Belo Horizonte - MG;77;14,89;2024-08-01;True;False;4,3
+976;Varejo;Grande;Rio de Janeiro - RJ;740;19,96;2024-01-04;False;False;3,2
+977;Restaurante;Pequeno;Curitiba - PR;49;9,33;2024-06-29;False;False;3,3
+978;E-commerce;Pequeno;Curitiba - PR;17;19,57;2024-02-29;True;False;3,8
+979;E-commerce;Pequeno;Rio de Janeiro - RJ;67;16,05;2024-03-12;False;True;4,5
+980;E-commerce;Médio;São Paulo - SP;218;15,43;2024-04-07;False;True;4,8
+981;E-commerce;Pequeno;Rio de Janeiro - RJ;23;20,42;2024-09-20;True;True;3,0
+982;Restaurante;Pequeno;São Paulo - SP;35;14,29;2024-08-22;False;False;4,3
+983;E-commerce;Pequeno;Brasília - DF;49;17,88;2024-02-10;True;True;3,3
+984;Farmácia;Pequeno;Rio de Janeiro - RJ;87;13,69;2024-02-10;False;True;4,4
+985;Outros;Pequeno;Belo Horizonte - MG;19;12,0;2024-02-29;True;True;3,0
+986;E-commerce;Pequeno;Curitiba - PR;88;23,8;2024-07-31;True;False;4,0
+987;Restaurante;Pequeno;Rio de Janeiro - RJ;54;23,24;2024-05-14;True;True;4,7
+988;E-commerce;Pequeno;Salvador - BA;32;11,17;2024-02-16;True;False;4,5
+989;E-commerce;Médio;São Paulo - SP;214;17,68;2024-12-15;False;True;4,8
+990;Varejo;Médio;Belo Horizonte - MG;163;18,29;2024-10-31;False;True;4,1
+991;Farmácia;Pequeno;Salvador - BA;76;15,63;2024-12-11;True;True;3,7
+992;Varejo;Médio;Rio de Janeiro - RJ;140;26,79;2024-06-14;True;False;4,0
+993;Outros;Pequeno;Salvador - BA;61;29,27;2024-11-26;True;True;4,0
+994;Varejo;Pequeno;Rio de Janeiro - RJ;63;36,77;2024-06-25;True;False;3,7
+995;Restaurante;Pequeno;São Paulo - SP;10;17,05;2024-01-22;True;True;4,5
+996;Varejo;Pequeno;São Paulo - SP;69;25,32;2024-01-29;True;False;4,7
+997;Restaurante;Pequeno;São Paulo - SP;45;9,42;2024-04-01;True;False;3,9
+998;Farmácia;Médio;Curitiba - PR;175;11,6;2024-12-01;True;True;3,0
+999;Restaurante;Pequeno;Rio de Janeiro - RJ;33;8,61;2024-09-29;False;False;4,4
+1000;E-commerce;Médio;São Paulo - SP;80;19,33;2024-12-24;False;True;5,0
+1001;E-commerce;Grande;Rio de Janeiro - RJ;852;18,96;2024-06-18;False;True;4,3
+1002;Restaurante;Médio;Belo Horizonte - MG;298;11,37;2024-01-10;False;False;2,5
+1003;Varejo;Pequeno;Belo Horizonte - MG;68;12,0;2024-03-11;False;False;2,5
+1004;Varejo;Pequeno;Rio de Janeiro - RJ;60;22,54;2024-02-28;True;True;3,8
+1005;E-commerce;Pequeno;Salvador - BA;10;19,65;2024-01-06;False;True;4,2
+1006;Restaurante;Pequeno;Belo Horizonte - MG;24;8,0;2024-09-17;False;False;4,4
+1007;Varejo;Médio;Belo Horizonte - MG;144;29,58;2024-07-16;True;True;4,6
+1008;Restaurante;Grande;São Paulo - SP;382;16,15;2024-09-27;False;False;4,4
+1009;Restaurante;Médio;São Paulo - SP;297;14,83;2024-03-04;False;False;2,8
+1010;Restaurante;Médio;Rio de Janeiro - RJ;177;11,88;2024-12-26;False;False;3,5
+1011;Restaurante;Grande;Curitiba - PR;1192;10,47;2024-12-29;False;True;3,4
+1012;Restaurante;Grande;Brasília - DF;1000;12,8;2024-09-02;True;False;5,0
+1013;E-commerce;Pequeno;Brasília - DF;108;15,96;2024-08-29;False;True;3,3
+1014;Restaurante;Pequeno;Brasília - DF;94;15,32;2024-07-19;False;True;3,7
+1015;Outros;Pequeno;Curitiba - PR;59;25,66;2024-10-22;False;False;3,8
+1016;E-commerce;Médio;São Paulo - SP;283;18,4;2024-04-26;False;True;3,9
+1017;Varejo;Pequeno;São Paulo - SP;26;29,35;2024-05-03;False;False;3,0
+1018;E-commerce;Pequeno;São Paulo - SP;21;18,88;2024-01-03;False;False;5,0
+1019;E-commerce;Pequeno;Belo Horizonte - MG;50;10,0;2024-04-22;False;True;4,5
+1020;Varejo;Grande;São Paulo - SP;889;29,43;2024-11-27;False;True;4,2
+1021;Varejo;Médio;Rio de Janeiro - RJ;276;14,85;2024-02-13;False;True;5,0
+1022;Farmácia;Pequeno;Salvador - BA;44;17,16;2024-03-02;False;True;4,3
+1023;E-commerce;Pequeno;Salvador - BA;63;19,09;2024-04-18;False;False;4,9
+1024;Varejo;Pequeno;São Paulo - SP;43;30,63;2024-05-30;True;False;4,5
+1025;Farmácia;Pequeno;São Paulo - SP;18;17,58;2024-12-04;False;False;2,8
+1026;Varejo;Pequeno;São Paulo - SP;74;16,78;2024-01-01;False;True;4,3
+1027;Restaurante;Pequeno;Salvador - BA;27;10,33;2024-06-22;False;True;3,9
+1028;E-commerce;Médio;Curitiba - PR;235;13,62;2024-12-18;False;True;4,1
+1029;Outros;Pequeno;São Paulo - SP;42;23,45;2024-12-07;False;False;3,9
+1030;E-commerce;Médio;São Paulo - SP;128;19,03;2024-11-24;False;True;4,5
+1031;E-commerce;Pequeno;São Paulo - SP;10;21,35;2024-03-15;False;False;4,4
+1032;Varejo;Grande;Belo Horizonte - MG;1474;27,77;2024-09-25;False;True;4,1
+1033;E-commerce;Pequeno;Curitiba - PR;24;13,25;2024-08-14;True;True;4,3
+1034;E-commerce;Grande;São Paulo - SP;834;22,03;2024-03-15;False;True;4,9
+1035;Varejo;Médio;Belo Horizonte - MG;251;31,29;2024-09-18;False;True;4,9
+1036;E-commerce;Médio;Brasília - DF;200;17,39;2024-01-25;True;False;4,3
+1037;Farmácia;Médio;Curitiba - PR;134;11,27;2024-12-05;True;False;4,0
+1038;Varejo;Pequeno;Belo Horizonte - MG;60;19,54;2024-10-13;False;False;4,0
+1039;Farmácia;Pequeno;Rio de Janeiro - RJ;29;10,32;2024-04-14;True;True;3,5
+1040;E-commerce;Grande;Belo Horizonte - MG;1196;17,93;2024-09-10;True;True;4,1
+1041;Farmácia;Médio;Rio de Janeiro - RJ;313;15,2;2024-04-21;False;True;4,1
+1042;Varejo;Pequeno;São Paulo - SP;36;15,57;2024-09-04;True;False;4,6
+1043;Varejo;Pequeno;São Paulo - SP;57;27,36;2024-04-08;False;False;5,0
+1044;Farmácia;Pequeno;São Paulo - SP;48;14,73;2024-09-04;False;True;4,8
+1045;Varejo;Médio;São Paulo - SP;161;24,17;2024-01-22;True;False;3,1
+1046;Outros;Médio;Rio de Janeiro - RJ;229;29,36;2024-09-20;False;False;4,4
+1047;E-commerce;Pequeno;São Paulo - SP;65;10,0;2024-04-02;False;True;4,0
+1048;Restaurante;Médio;São Paulo - SP;153;16,25;2024-07-28;False;True;3,9
+1049;Varejo;Pequeno;São Paulo - SP;71;15,45;2024-09-15;False;True;4,9
+1050;E-commerce;Pequeno;São Paulo - SP;44;18,15;2024-03-23;True;True;4,1
+1051;Varejo;Grande;São Paulo - SP;839;22,1;2024-03-04;False;True;4,2
+1052;Farmácia;Médio;Curitiba - PR;264;22,2;2024-04-11;False;False;4,6
+1053;E-commerce;Médio;Salvador - BA;220;20,48;2024-03-25;False;False;3,1
+1054;Restaurante;Pequeno;São Paulo - SP;53;10,7;2024-05-30;False;True;4,5
+1055;E-commerce;Pequeno;São Paulo - SP;92;22,09;2024-05-24;False;True;4,0
+1056;E-commerce;Pequeno;Rio de Janeiro - RJ;68;18,46;2024-05-19;False;False;4,3
+1057;Varejo;Médio;São Paulo - SP;148;26,17;2024-05-04;True;False;5,0
+1058;Farmácia;Pequeno;São Paulo - SP;65;12,55;2024-12-14;False;True;4,8
+1059;E-commerce;Grande;Brasília - DF;476;16,4;2024-06-10;False;True;4,9
+1060;Farmácia;Pequeno;Brasília - DF;25;13,21;2024-10-09;True;True;4,0
+1061;E-commerce;Pequeno;Rio de Janeiro - RJ;63;23,07;2024-04-30;False;True;4,4
+1062;E-commerce;Pequeno;São Paulo - SP;53;16,06;2024-05-23;False;False;4,3
+1063;E-commerce;Médio;Rio de Janeiro - RJ;80;14,81;2024-12-10;False;True;4,4
+1064;Restaurante;Pequeno;São Paulo - SP;70;8,28;2024-09-20;False;True;4,3
+1065;E-commerce;Médio;Rio de Janeiro - RJ;192;10,0;2024-04-25;False;True;3,7
+1066;E-commerce;Médio;Belo Horizonte - MG;129;20,19;2024-01-26;False;False;3,7
+1067;Outros;Grande;Rio de Janeiro - RJ;910;31,7;2024-11-21;False;True;3,4
+1068;E-commerce;Pequeno;Salvador - BA;54;10,0;2024-08-15;False;False;4,1
+1069;Farmácia;Grande;São Paulo - SP;613;12,8;2024-02-19;False;False;5,0
+1070;Outros;Pequeno;Brasília - DF;15;35,35;2024-09-02;False;True;4,5
+1071;Restaurante;Pequeno;Brasília - DF;16;11,88;2024-08-15;False;True;2,9
+1072;Restaurante;Pequeno;Brasília - DF;33;8,69;2024-06-05;True;False;4,4
+1073;Restaurante;Grande;Rio de Janeiro - RJ;675;10,93;2024-12-21;False;False;3,5
+1074;Restaurante;Pequeno;Salvador - BA;11;12,74;2024-08-31;False;False;5,0
+1075;E-commerce;Pequeno;Rio de Janeiro - RJ;57;20,23;2024-01-01;False;True;3,8
+1076;E-commerce;Médio;Salvador - BA;242;19,66;2024-01-08;False;False;4,6
+1077;Restaurante;Pequeno;Rio de Janeiro - RJ;42;10,96;2024-07-26;False;False;4,4
+1078;Varejo;Pequeno;São Paulo - SP;37;30,97;2024-04-02;False;False;4,3
+1079;E-commerce;Pequeno;São Paulo - SP;57;22,55;2024-07-20;False;True;4,1
+1080;Restaurante;Pequeno;Belo Horizonte - MG;26;13,35;2024-08-15;False;True;4,8
+1081;E-commerce;Pequeno;Salvador - BA;59;23,78;2024-04-19;False;False;3,6
+1082;E-commerce;Pequeno;Belo Horizonte - MG;51;28,09;2024-12-10;True;True;3,5
+1083;Varejo;Pequeno;Belo Horizonte - MG;59;30,71;2024-08-11;False;False;3,5
+1084;Varejo;Médio;Rio de Janeiro - RJ;146;15,78;2024-10-31;False;True;5,0
+1085;Restaurante;Grande;São Paulo - SP;500;13,94;2024-09-28;False;True;4,5
+1086;Varejo;Médio;Salvador - BA;143;17,75;2024-03-30;False;False;3,3
+1087;E-commerce;Médio;São Paulo - SP;122;10,0;2024-12-28;True;True;3,4
+1088;Outros;Médio;Belo Horizonte - MG;109;27,1;2024-01-11;False;True;3,8
+1089;E-commerce;Pequeno;Curitiba - PR;69;17,29;2024-05-16;False;False;3,3
+1090;Restaurante;Pequeno;Belo Horizonte - MG;48;12,03;2024-06-04;False;True;4,8
+1091;E-commerce;Pequeno;São Paulo - SP;59;19,33;2024-10-30;False;True;4,8
+1092;Varejo;Médio;Rio de Janeiro - RJ;205;37,67;2024-06-24;False;True;5,0
+1093;Varejo;Pequeno;Belo Horizonte - MG;31;40,71;2024-05-20;False;False;4,6
+1094;E-commerce;Pequeno;Rio de Janeiro - RJ;52;20,96;2024-11-16;False;True;4,2
+1095;Restaurante;Pequeno;Salvador - BA;25;14,24;2024-07-19;True;True;4,7
+1096;E-commerce;Médio;São Paulo - SP;174;13,19;2024-07-05;False;False;3,8
+1097;Outros;Pequeno;Salvador - BA;27;18,44;2024-10-08;False;False;4,7
+1098;Restaurante;Pequeno;São Paulo - SP;79;19,13;2024-10-26;False;True;2,5
+1099;Farmácia;Médio;São Paulo - SP;165;19,71;2024-05-16;False;False;4,6
+1100;Restaurante;Pequeno;Rio de Janeiro - RJ;49;16,04;2024-11-01;False;True;4,9
+1101;E-commerce;Médio;São Paulo - SP;225;23,56;2024-07-26;False;True;3,8
+1102;E-commerce;Pequeno;Rio de Janeiro - RJ;66;19,12;2024-05-13;False;True;4,9
+1103;Varejo;Pequeno;Salvador - BA;18;27,24;2024-12-12;False;False;4,5
+1104;Varejo;Pequeno;Belo Horizonte - MG;38;23,56;2024-01-29;False;False;3,3
+1105;E-commerce;Pequeno;Brasília - DF;62;10,73;2024-02-29;False;True;3,0
+1106;E-commerce;Médio;Brasília - DF;321;10,0;2024-02-25;True;True;5,0
+1107;E-commerce;Pequeno;Curitiba - PR;71;12,37;2024-05-24;False;False;4,4
+1108;Restaurante;Médio;Curitiba - PR;166;8,96;2024-04-04;False;False;3,6
+1109;Restaurante;Grande;Salvador - BA;1002;14,58;2024-04-14;False;True;4,1
+1110;E-commerce;Pequeno;Brasília - DF;55;21,16;2024-12-14;False;False;3,7
+1111;E-commerce;Pequeno;Rio de Janeiro - RJ;17;26,77;2024-05-07;False;True;4,5
+1112;E-commerce;Pequeno;Belo Horizonte - MG;10;19,83;2024-04-23;False;False;4,5
+1113;E-commerce;Pequeno;São Paulo - SP;66;23,05;2024-08-20;True;True;5,0
+1114;Restaurante;Pequeno;Rio de Janeiro - RJ;47;14,14;2024-08-19;False;True;4,1
+1115;Restaurante;Pequeno;Belo Horizonte - MG;36;12,61;2024-07-26;False;False;4,6
+1116;E-commerce;Pequeno;São Paulo - SP;68;15,93;2024-11-02;False;True;3,7
+1117;Varejo;Médio;Rio de Janeiro - RJ;254;24,44;2024-10-30;False;True;3,9
+1118;E-commerce;Médio;Curitiba - PR;110;13,31;2024-11-06;True;True;4,1
+1119;E-commerce;Pequeno;Belo Horizonte - MG;10;10,68;2024-09-28;False;True;3,9
+1120;Varejo;Pequeno;Salvador - BA;78;26,94;2024-09-07;True;True;2,8
+1121;Varejo;Pequeno;Rio de Janeiro - RJ;41;33,35;2024-07-15;False;True;4,9
+1122;Varejo;Pequeno;Belo Horizonte - MG;70;31,85;2024-08-31;True;True;4,2
+1123;Farmácia;Pequeno;Belo Horizonte - MG;47;13,87;2024-11-03;False;False;4,4
+1124;E-commerce;Médio;São Paulo - SP;346;20,83;2024-07-27;False;True;4,3
+1125;Restaurante;Pequeno;Curitiba - PR;42;11,53;2024-01-02;False;True;4,3
+1126;E-commerce;Pequeno;São Paulo - SP;80;12,42;2024-08-13;True;True;4,6
+1127;Varejo;Pequeno;Rio de Janeiro - RJ;44;19,78;2024-02-23;False;False;3,5
+1128;Varejo;Pequeno;Rio de Janeiro - RJ;52;15,76;2024-10-05;False;False;4,1
+1129;E-commerce;Grande;São Paulo - SP;557;17,74;2024-08-30;False;True;3,9
+1130;Varejo;Grande;Brasília - DF;815;47,78;2024-02-10;False;True;3,4
+1131;E-commerce;Médio;Brasília - DF;180;20,64;2024-08-01;False;False;3,8
+1132;E-commerce;Médio;São Paulo - SP;203;19,43;2024-11-15;True;False;3,1
+1133;E-commerce;Médio;São Paulo - SP;268;20,12;2024-02-29;False;True;4,6
+1134;E-commerce;Pequeno;São Paulo - SP;67;12,89;2024-07-13;False;True;3,9
+1135;Varejo;Pequeno;Rio de Janeiro - RJ;26;25,88;2024-07-28;False;True;3,5
+1136;E-commerce;Médio;São Paulo - SP;298;18,64;2024-09-28;False;True;4,7
+1137;E-commerce;Pequeno;São Paulo - SP;31;23,21;2024-02-24;False;False;3,3
+1138;E-commerce;Pequeno;São Paulo - SP;59;13,67;2024-12-30;False;True;5,0
+1139;Restaurante;Pequeno;Salvador - BA;66;19,01;2024-04-18;False;True;3,5
+1140;Outros;Grande;São Paulo - SP;626;25,17;2024-12-11;True;True;5,0
+1141;E-commerce;Pequeno;Belo Horizonte - MG;50;17,88;2024-11-28;False;True;2,7
+1142;E-commerce;Pequeno;São Paulo - SP;80;16,07;2024-11-02;False;True;5,0
+1143;Restaurante;Pequeno;Belo Horizonte - MG;39;8,0;2024-09-28;False;False;5,0
+1144;Varejo;Pequeno;São Paulo - SP;73;33,53;2024-06-14;False;True;3,8
+1145;Varejo;Grande;Salvador - BA;1128;22,46;2024-11-29;False;True;5,0
+1146;E-commerce;Médio;Salvador - BA;207;16,14;2024-02-24;False;False;4,2
+1147;Restaurante;Médio;São Paulo - SP;231;12,19;2024-09-20;False;False;3,6
+1148;E-commerce;Médio;São Paulo - SP;247;14,21;2024-04-02;False;True;3,8
+1149;Varejo;Pequeno;Rio de Janeiro - RJ;49;28,69;2024-01-22;False;False;4,5
+1150;Farmácia;Grande;Salvador - BA;981;11,39;2024-07-30;False;True;5,0
+1151;E-commerce;Médio;São Paulo - SP;226;12,74;2024-04-02;False;True;5,0
+1152;Farmácia;Médio;São Paulo - SP;349;10,0;2024-08-16;False;True;4,3
+1153;Farmácia;Médio;Rio de Janeiro - RJ;222;10,0;2024-05-30;True;False;4,5
+1154;Restaurante;Pequeno;Rio de Janeiro - RJ;95;14,89;2024-11-01;False;True;4,5
+1155;Varejo;Pequeno;Rio de Janeiro - RJ;45;39,13;2024-08-17;True;True;3,0
+1156;E-commerce;Médio;Curitiba - PR;250;13,13;2024-12-02;False;True;3,8
+1157;Farmácia;Pequeno;São Paulo - SP;51;11,29;2024-05-27;False;False;5,0
+1158;E-commerce;Pequeno;Salvador - BA;39;21,11;2024-04-23;True;False;3,3
+1159;Restaurante;Pequeno;Belo Horizonte - MG;10;8,0;2024-08-08;True;False;4,0
+1160;Restaurante;Médio;Rio de Janeiro - RJ;173;12,6;2024-01-14;False;False;3,2
+1161;E-commerce;Pequeno;São Paulo - SP;53;17,02;2024-04-05;True;True;3,5
+1162;E-commerce;Pequeno;Brasília - DF;50;26,09;2024-06-26;True;False;4,8
+1163;Restaurante;Médio;Curitiba - PR;316;18,72;2024-05-29;True;True;4,3
+1164;Outros;Pequeno;Brasília - DF;69;13,72;2024-05-18;True;True;4,6
+1165;Varejo;Médio;São Paulo - SP;163;19,3;2024-02-06;False;True;3,8
+1166;Farmácia;Pequeno;Brasília - DF;47;10,0;2024-06-04;False;False;4,8
+1167;Varejo;Médio;Belo Horizonte - MG;203;22,82;2024-03-28;True;True;4,2
+1168;Restaurante;Pequeno;São Paulo - SP;45;14,86;2024-02-17;False;True;4,1
+1169;Varejo;Pequeno;São Paulo - SP;72;18,09;2024-03-08;True;False;3,9
+1170;E-commerce;Pequeno;São Paulo - SP;66;16,32;2024-08-06;False;False;4,1
+1171;Varejo;Pequeno;Belo Horizonte - MG;71;21,72;2024-08-23;True;True;3,5
+1172;Outros;Pequeno;São Paulo - SP;23;22,9;2024-04-27;False;False;4,6
+1173;Restaurante;Pequeno;Curitiba - PR;21;12,76;2024-01-06;False;True;4,4
+1174;E-commerce;Médio;Curitiba - PR;193;16,36;2024-08-14;False;True;4,6
+1175;E-commerce;Pequeno;São Paulo - SP;78;16,98;2024-11-30;False;True;4,2
+1176;Restaurante;Médio;Rio de Janeiro - RJ;249;15,09;2024-04-29;True;True;3,3
+1177;Varejo;Pequeno;São Paulo - SP;46;24,82;2024-06-21;False;False;3,9
+1178;Varejo;Pequeno;Curitiba - PR;43;12,0;2024-09-30;False;False;3,2
+1179;Varejo;Pequeno;Curitiba - PR;35;24,34;2024-03-07;True;True;4,3
+1180;Restaurante;Pequeno;Curitiba - PR;42;9,13;2024-10-12;False;False;4,5
+1181;E-commerce;Grande;Salvador - BA;624;16,72;2024-12-27;False;False;4,0
+1182;Varejo;Pequeno;São Paulo - SP;32;27,45;2024-11-02;False;False;4,5
+1183;Varejo;Pequeno;Brasília - DF;36;13,49;2024-05-29;True;True;4,0
+1184;Varejo;Médio;Belo Horizonte - MG;218;12,46;2024-06-12;False;True;4,1
+1185;Varejo;Grande;Curitiba - PR;300;30,7;2024-08-04;True;True;3,9
+1186;Farmácia;Médio;São Paulo - SP;155;18,66;2024-04-10;False;True;4,0
+1187;E-commerce;Pequeno;São Paulo - SP;70;17,22;2024-06-27;False;False;4,3
+1188;Outros;Pequeno;Belo Horizonte - MG;40;12,0;2024-01-17;True;True;2,9
+1189;Varejo;Pequeno;São Paulo - SP;13;31,47;2024-06-14;False;False;3,6
+1190;E-commerce;Pequeno;Rio de Janeiro - RJ;33;21,0;2024-08-09;False;False;5,0
+1191;E-commerce;Pequeno;Rio de Janeiro - RJ;63;20,18;2024-04-02;False;True;4,4
+1192;Restaurante;Médio;São Paulo - SP;224;13,93;2024-03-22;False;True;4,0
+1193;E-commerce;Pequeno;Rio de Janeiro - RJ;70;21,99;2024-07-12;False;False;3,6
+1194;E-commerce;Médio;São Paulo - SP;251;10,96;2024-09-09;True;False;3,1
+1195;E-commerce;Médio;Brasília - DF;184;25,56;2024-09-28;False;True;4,6
+1196;E-commerce;Grande;São Paulo - SP;896;17,09;2024-07-18;False;True;3,9
+1197;E-commerce;Pequeno;São Paulo - SP;60;17,35;2024-04-29;False;False;4,2
+1198;Outros;Pequeno;Salvador - BA;94;13,53;2024-07-02;False;False;4,0
+1199;Restaurante;Médio;Belo Horizonte - MG;150;13,04;2024-03-15;True;True;4,4
+1200;Outros;Médio;São Paulo - SP;291;41,65;2024-07-05;False;False;4,1

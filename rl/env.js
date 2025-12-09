@@ -13,32 +13,67 @@ import _ from "lodash";
 export const VEHICLES = ["moto","bike","van","caminhao"];
 
 export function buildState({distKm, urgencia=false, tipoCarga="pequena", disponibilidade}) {
-  // disponibilidade: objeto com counts por veículo
-  const maxVeh = Math.max(1, disponibilidade.motos_ativas || 1);
+  // CONFIGURAÇÃO: Número fixo para normalizar a frota. 
+  // Se tiver 10 motos, vira 0.2. Se tiver 50, vira 1.0.
+  const MAX_FLEET = 50.0; 
+  
   const state = [
-    distKm / 100.0, // normaliza assumindo max 100km
+    // 1. Distância normalizada (0.0 a 1.0)
+    Math.min(1.0, distKm / 100.0), 
+    
+    // 2. Flags (0 ou 1)
     urgencia ? 1.0 : 0.0,
-    tipoCarga === "pequena" ? 1.0 : 0.0,
-    tipoCarga === "grande" ? 1.0 : 0.0,
-    (disponibilidade.motos_ativas || 0) / (maxVeh),
-    (disponibilidade.bikes_ativas || 0) / (maxVeh),
-    (disponibilidade.vans_ativas || 0) / (maxVeh),
-    (disponibilidade.caminhoes_ativos || 0) / (maxVeh)
+    tipoCarga === "pequena" ? 1.0 : 0.0, 
+    tipoCarga === "grande" ? 1.0 : 0.0, 
+    
+    // 3. Disponibilidade normalizada (0.0 a 1.0)
+    Math.min(1.0, (disponibilidade.motos_ativas || 0) / MAX_FLEET),
+    Math.min(1.0, (disponibilidade.bikes_ativas || 0) / MAX_FLEET),
+    Math.min(1.0, (disponibilidade.vans_ativas || 0) / MAX_FLEET),
+    Math.min(1.0, (disponibilidade.caminhoes_ativos || 0) / MAX_FLEET)
   ];
+
   return tf.tensor2d([state]);
 }
 
-export function computeCost({vehicle, distKm, tempoH, baseCosts, pedagio=0, urgencia=false}) {
-  // baseCosts: custos operacionais por dia por tipo (do CSV)
-  // custo combustível aproximado por km simulado
+export function computeCost({vehicle, distKm, baseCosts = {}, urgencia=false, tipoCarga="pequena"}) {
   const costPerKm = {
-    moto: 0.3,
-    bike: 0.05,
-    van: 1.2,
-    caminhao: 2.5
+    moto: 0.5,
+    bike: 0.1,
+    van: 2.0,
+    caminhao: 4.5
   };
-  let cost = (costPerKm[vehicle] || 1.0) * distKm + pedagio + (baseCosts[vehicle] || 0);
-  if (urgencia) cost *= 1.5;
+
+  // Custo base da viagem
+  let cost = (costPerKm[vehicle] || 1.0) * distKm + (baseCosts[vehicle] || 0);
+
+  if (urgencia) cost *= 1.2; 
+
+  // --- REGRAS DE PUNIÇÃO (CALIBRADAS) ---
+
+  // 1. IMPOSSÍVEL FÍSICO (Obrigatório corrigir o viés da Bike)
+  // Van percorrendo 100km custa ~240. A punição deve ser maior que isso.
+  // Aumentamos de 150 para 500.
+  if ((vehicle === "bike" || vehicle === "moto") && tipoCarga === "grande") {
+    cost += 500; 
+  }
+
+  // 2. INVIÁVEL (Bike longe ou urgente)
+  // Mantemos baixo para que ele aprenda a preferir Moto, mas não proíba totalmente se for perto
+  if (vehicle === "bike" && (distKm > 10 || urgencia)) {
+    cost += 50; 
+  }
+
+  // 3. INEFICIÊNCIA (Van para carta pequena perto)
+  if (vehicle === "van" && tipoCarga === "pequena" && distKm < 5) {
+     cost += 30;
+  }
+
+  // 4. DESPERDÍCIO (Caminhão)
+  if (vehicle === "caminhao" && tipoCarga === "pequena") {
+    cost += 100;
+  }
+
   return cost;
 }
 
