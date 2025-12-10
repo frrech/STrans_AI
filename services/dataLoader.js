@@ -1,14 +1,30 @@
 import fs from "fs";
 import path from "path";
 import { parse } from "csv-parse/sync";
-import _ from "lodash";
+import { fileURLToPath } from 'url';
+
+// Configuração para __dirname em ES Modules (caso precise)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Ajuste o caminho se sua pasta data estiver na raiz
+const DATA_DIR = path.resolve("./data");
 
 /**
- * Carrega CSVs da pasta /data e retorna objetos normalizados.
- * Usa o Manual Técnico (colunas esperadas) para mapear e preencher missing values.
+ * Função auxiliar para converter "10,50" (PT-BR) em 10.50 (JS Number)
  */
-
-const DATA_DIR = path.resolve("./data");
+function parseNum(val) {
+  if (!val) return 0;
+  // Se já for número, retorna ele
+  if (typeof val === 'number') return val;
+  
+  // Troca vírgula por ponto e converte
+  const cleanVal = val.toString().replace(',', '.');
+  const number = Number(cleanVal);
+  
+  // Se der erro (NaN), retorna 0
+  return isNaN(number) ? 0 : number;
+}
 
 function readCSV(fileName) {
   const csv = fs.readFileSync(path.join(DATA_DIR, fileName), "utf8");
@@ -16,56 +32,63 @@ function readCSV(fileName) {
 }
 
 export function loadAllData() {
+  console.log("Carregando dados de:", DATA_DIR);
+
   const clientes = readCSV("strans_clientes.csv");
   const entregas = readCSV("strans_entregas.csv");
   const rotas = readCSV("strans_rotas.csv");
   const veiculos = readCSV("strans_veiculos.csv");
 
-  // Normalizações básicas (convert types)
+  // --- 1. Clientes ---
   const clientesNorm = clientes.map(r => ({
-    cliente_id: Number(r.cliente_id),
+    cliente_id: parseNum(r.cliente_id),
     tipo_cliente: r.tipo_cliente,
     porte_empresa: r.porte_empresa,
     regiao: r.regiao,
-    volume_mensal_entregas: Number(r.volume_mensal_entregas || 0),
-    valor_medio_entrega: Number(r.valor_medio_entrega || 0),
+    // Numéricos tratados:
+    volume_mensal_entregas: parseNum(r.volume_mensal_entregas),
+    valor_medio_entrega: parseNum(r.valor_medio_entrega),
+    satisfacao_cliente: parseNum(r.satisfacao_cliente), // Adicionei baseado no seu erro anterior
     data_contrato: r.data_contrato
   }));
 
+  // --- 2. Entregas ---
   const entregasNorm = entregas.map(r => ({
     data: r.data,
-    total_entregas: Number(r.total_entregas || 0),
-    entregas_pequenas: Number(r.entregas_pequenas || 0),
-    entregas_grandes: Number(r.entregas_grandes || 0),
-    entregas_moto: Number(r.entregas_moto || 0),
-    entregas_bike: Number(r.entregas_bike || 0),
-    entregas_van: Number(r.entregas_van || 0),
-    entregas_caminhao: Number(r.entregas_caminhao || 0),
-    valor_medio_pequena: Number(r.valor_medio_pequena || 0),
-    valor_medio_grande: Number(r.valor_medio_grande || 0),
-    receita_total: Number(r.receita_total || 0)
+    total_entregas: parseNum(r.total_entregas),
+    entregas_pequenas: parseNum(r.entregas_pequenas),
+    entregas_grandes: parseNum(r.entregas_grandes),
+    entregas_moto: parseNum(r.entregas_moto),
+    entregas_bike: parseNum(r.entregas_bike),
+    entregas_van: parseNum(r.entregas_van),
+    entregas_caminhao: parseNum(r.entregas_caminhao),
+    valor_medio_pequena: parseNum(r.valor_medio_pequena),
+    valor_medio_grande: parseNum(r.valor_medio_grande),
+    receita_total: parseNum(r.receita_total)
   }));
 
+  // --- 3. Rotas ---
   const rotasNorm = rotas.map(r => ({
     data: r.data,
-    rotas_ativas: Number(r.rotas_ativas || 0),
-    distancia_media_rota_km: Number(r.distancia_media_rota_km || 0),
-    tempo_medio_rota_h: Number(r.tempo_medio_rota_h || 0),
-    custo_combustivel_medio_rota: Number(r.custo_combustivel_medio_rota || 0),
-    custo_pedagio_medio_rota: Number(r.custo_pedagio_medio_rota || 0)
+    rotas_ativas: parseNum(r.rotas_ativas),
+    distancia_media_rota_km: parseNum(r.distancia_media_rota_km),
+    tempo_medio_rota_h: parseNum(r.tempo_medio_rota_h),
+    custo_combustivel_medio_rota: parseNum(r.custo_combustivel_medio_rota),
+    custo_pedagio_medio_rota: parseNum(r.custo_pedagio_medio_rota)
   }));
 
+  // --- 4. Veículos ---
   const veiculosNorm = veiculos.map(r => ({
     data: r.data,
-    total_veiculos: Number(r.total_veiculos || 0),
-    motos_ativas: Number(r.motos_ativas || 0),
-    bikes_ativas: Number(r.bikes_ativas || 0),
-    vans_ativas: Number(r.vans_ativas || 0),
-    caminhoes_ativos: Number(r.caminhoes_ativos || 0),
-    custo_operacional_moto_dia: Number(r.custo_operacional_moto_dia || 0),
-    custo_operacional_bike_dia: Number(r.custo_operacional_bike_dia || 0),
-    custo_operacional_van_dia: Number(r.custo_operacional_van_dia || 0),
-    custo_operacional_caminhao_dia: Number(r.custo_operacional_caminhao_dia || 0)
+    total_veiculos: parseNum(r.total_veiculos),
+    motos_ativas: parseNum(r.motos_ativas),
+    bikes_ativas: parseNum(r.bikes_ativas),
+    vans_ativas: parseNum(r.vans_ativas),
+    caminhoes_ativos: parseNum(r.caminhoes_ativos),
+    custo_operacional_moto_dia: parseNum(r.custo_operacional_moto_dia),
+    custo_operacional_bike_dia: parseNum(r.custo_operacional_bike_dia),
+    custo_operacional_van_dia: parseNum(r.custo_operacional_van_dia),
+    custo_operacional_caminhao_dia: parseNum(r.custo_operacional_caminhao_dia)
   }));
 
   return {

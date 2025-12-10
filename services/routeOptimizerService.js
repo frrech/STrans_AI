@@ -27,7 +27,10 @@ export async function obterMelhorRota({ origem, destino, tipoCarga="pequena", ur
   const stateTensor = buildState({ distKm, urgencia, tipoCarga, disponibilidade });
 
   // 3) prever ação com DQN
-  const { actionIndex, vehicle, qvals } = await escolherMelhorAcao(stateTensor);
+  const { actionIndex, vehicle, qvals } = await escolherMelhorAcao(stateTensor, { 
+    tipoCarga: tipoCarga, // ex: "grande"
+    distKm: distKm        // ex: 25.5
+});
 
   // 4) estimar custo para a ação selecionada (usamos custos base no CSV)
   const lastVeiculos = dataSnapshot.veiculos[dataSnapshot.veiculos.length-1] || {};
