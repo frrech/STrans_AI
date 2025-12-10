@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Truck, Bike, Package, Zap, MapPin, Navigation, Info } from 'lucide-react';
+import { Truck, Zap, MapPin, Navigation, Info } from 'lucide-react';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -66,7 +66,7 @@ function App() {
             <p className="text-xs text-blue-200">Logística Inteligente &copy; 2025</p>
           </div>
           <div className="text-sm bg-blue-800 px-3 py-1 rounded-full flex items-center gap-2">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            <span className="w-2 h-2 bg-green-400 rounded-full"></span>
             IA Online
           </div>
         </div>
@@ -75,7 +75,7 @@ function App() {
       <main className="max-w-4xl mx-auto px-6 py-10">
         
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-extrabold text-slate-800 mb-2">Otimizador de Rotas</h2>
+          <h2 className="text-3xl font-extrabold text-slate-800 mb-2">Otimizador de Transporte</h2>
           <p className="text-slate-500 max-w-lg mx-auto">
             Nossa IA analisa sua entrega e escolhe entre Moto, Bike, Van ou Caminhão para garantir o menor custo e maior eficiência.
           </p>
@@ -126,13 +126,13 @@ function App() {
                   <label className="block text-sm font-medium text-slate-600 mb-1">Tamanho da Carga</label>
                   <select 
                     name="tipoCarga" 
-                    value={formData.tipoCarga} // Garanta que o value esteja ligado ao state
+                    value={formData.tipoCarga}
                     className="w-full p-2.5 bg-slate-50 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition"
                     onChange={handleChange}
                   >
-                    <option value="pequena">✉️ Pequena (Docs/Envelopes)</option>
-                    <option value="media">📦 Média (Caixas/Compras)</option> {/* NOVA OPÇÃO */}
-                    <option value="grande">🚛 Grande (Móveis/Paletes)</option>
+                    <option value="pequena">✉️ Pequena</option>
+                    <option value="media">📦 Média</option>
+                    <option value="grande">🚛 Grande</option>
                   </select>
                 </div>
                 
@@ -163,7 +163,7 @@ function App() {
             {!resultado && !loading && !error && (
               <div className="h-full flex flex-col items-center justify-center text-slate-400 border-2 border-dashed border-slate-200 rounded-2xl p-6">
                 <Truck size={48} className="mb-4 opacity-20" />
-                <p>Preencha os dados ao lado para ver a mágica da STrans.</p>
+                <p>Preencha os dados ao lado para obter uma análise completa da sua entrega.</p>
               </div>
             )}
 
@@ -175,13 +175,14 @@ function App() {
 
             {resultado && (
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-blue-100 animate-fade-in-up">
-                <div className="bg-blue-600 p-6 text-white text-center relative overflow-hidden">
+                <div className={`p-6 text-white text-center relative overflow-hidden transition-colors duration-500 ${formData.urgencia ? 'bg-orange-600' : 'bg-blue-600'}`}>
                   <div className="absolute top-0 left-0 w-full h-full bg-white opacity-5 transform -skew-y-6 scale-150"></div>
-                  <p className="text-blue-100 text-sm uppercase tracking-widest font-semibold mb-1">Melhor Opção</p>
+                  <p className="text-white/80 text-sm uppercase tracking-widest font-semibold mb-1">Melhor Opção</p>
                   <div className="text-6xl mb-2 filter drop-shadow-md">
                     {getVehicleIcon(resultado.escolha)}
                   </div>
                   <h2 className="text-3xl font-bold capitalize">{resultado.escolha}</h2>
+                  {formData.urgencia && <span className="inline-block mt-2 text-xs bg-white/20 px-2 py-1 rounded font-bold">⏱️ Prioridade Alta</span>}
                 </div>
                 
                 <div className="p-6 space-y-6">
@@ -201,35 +202,74 @@ function App() {
                   </div>
 
                   <div className="space-y-3">
-                    <p className="text-xs text-slate-400 font-bold uppercase mb-2">Detalhes da IA (DQN)</p>
+                    <p className="text-center text-xs text-slate-400 font-bold uppercase mb-2">
+                       Comparativo de Custo
+                    </p>
+                    
                     {resultado.qvals && (
-                      <div className="grid grid-cols-4 gap-2 h-20 items-end">
-                         {/* Visualizador de Q-Values (Gráfico de barras simples) */}
-                         {resultado.qvals.map((val, idx) => {
-                           const veiculos = ['Moto', 'Bike', 'Van', 'Truck'];
-                           // Normalizar para visualização (apenas visual)
-                           const height = Math.min(100, Math.max(10, 100 + val * 10)); 
-                           const isSelected = resultado.actionIndex === idx;
-                           
-                           return (
-                             <div key={idx} className="flex flex-col items-center group">
-                                <div 
-                                  className={`w-full rounded-t-md transition-all duration-500 ${isSelected ? 'bg-blue-500' : 'bg-slate-200'}`}
-                                  style={{ height: `${height}%` }}
-                                ></div>
-                                <span className={`text-[10px] mt-1 ${isSelected ? 'font-bold text-blue-600' : 'text-slate-400'}`}>
-                                  {veiculos[idx]}
-                                </span>
-                             </div>
-                           )
-                         })}
+                      <div className="grid grid-cols-4 gap-2 h-32 items-end bg-slate-50 p-2 rounded-lg border border-slate-100">
+                          
+                          {(() => {
+                            // 1. Converter tudo para Custo Positivo (Math.abs)
+                            // Ex: -50 vira 50 (Custo Baixo), -800 vira 800 (Custo Alto)
+                            const costs = resultado.qvals.map(v => Math.abs(v));
+                            
+                            const maxCost = Math.max(...costs); // O pior (ex: 800)
+                            const minCost = Math.min(...costs); // O melhor (ex: 50)
+                            const range = maxCost - minCost;
+
+                            return costs.map((cost, idx) => {
+                              const veiculos = ['Moto', 'Bike', 'Van', 'Truck'];
+                              const isSelected = resultado.actionIndex === idx;
+                              
+                              // 2. Calcular altura baseada no CUSTO
+                              // Se range for 0 (tudo igual), altura média
+                              let relativePct = 0;
+                              if (range === 0) relativePct = 0.5;
+                              else relativePct = (cost - minCost) / range; // 0 = Melhor, 1 = Pior
+
+                              // A melhor opção (minCost) terá 15% de altura
+                              // A pior opção (maxCost) terá 100% de altura
+                              const heightCss = 15 + (relativePct * 85); 
+
+                              return (
+                                <div key={idx} className="flex flex-col items-center group h-full justify-end relative">
+                                  
+                                  {/* Tooltip com Valor */}
+                                  <div className="absolute -top-8 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-[10px] py-1 px-2 rounded shadow-lg pointer-events-none z-10 whitespace-nowrap">
+                                    Pontuação: {cost.toFixed(0)}
+                                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1 w-2 h-2 bg-slate-800 rotate-45"></div>
+                                  </div>
+
+                                  {/* A Barra Colorida */}
+                                  {/* Logica de cor invertida: Vencedor = Verde/Azul, Perdedor = Vermelho/Cinza */}
+                                  <div 
+                                    className={`w-full rounded-t-md transition-all duration-700 ${
+                                      isSelected 
+                                        ? 'bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]' // Vencedor brilha verde
+                                        : 'bg-red-300 opacity-60 hover:opacity-100 hover:bg-red-400' // Perdedores são vermelhos/altos
+                                    }`}
+                                    style={{ height: `${heightCss}%` }}
+                                  >
+                                  </div>
+
+                                  <div className="text-center mt-2">
+                                    <span className={`block text-[10px] font-bold uppercase ${isSelected ? 'text-green-700' : 'text-slate-400'}`}>
+                                      {veiculos[idx]}
+                                    </span>
+                                    <span className="text-[9px] text-slate-300">{cost.toFixed(0)}</span>
+                                  </div>
+                                </div>
+                              )
+                            });
+                          })()}
                       </div>
                     )}
                   </div>
                   
                   <div className="bg-slate-50 p-3 rounded-lg text-xs text-slate-500 flex justify-between">
-                     <span>Distância: <strong>{resultado.distanciaKm} km</strong></span>
-                     <span>Modelo: <strong>{resultado.meta}</strong></span>
+                      <span>Distância: <strong>{resultado.distanciaKm.toFixed(3)} km</strong></span>
+                      <span>Modelo: <strong>{resultado.meta}</strong></span>
                   </div>
 
                 </div>
