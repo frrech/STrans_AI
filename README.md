@@ -1,9 +1,9 @@
 # STrans_AI
 Inteligência artificial Calculadora de preço de rotas
 Desenvolvido por: Francisco Rech e Eduardo Vigil
-
+Principais bibliotecas utilizadas: Express.js, TensorFlow, Vitest
 Para executar, é necessário Node.js e npm.
-'''
+```
 //1. instale as dependências
 npm i
 
@@ -12,4 +12,4 @@ npm run train
 
 //3. para rodar o servidor
 npm start
-'''
+```
