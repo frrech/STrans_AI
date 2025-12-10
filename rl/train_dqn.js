@@ -1,16 +1,35 @@
-import * as tf from "@tensorflow/tfjs"; 
+import "@tensorflow/tfjs-node"
+import * as tf from "@tensorflow/tfjs";
 import { createQNetwork } from "../model/dqn_model.js";
 import ReplayBuffer from "./replayBuffer.js";
 import { buildState, VEHICLES, computeCost } from "./env.js"; // Removi rewardFromCost
 import { loadAllData } from "../services/dataLoader.js";
-import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
+import fs from "fs";
 
 const N_ACTIONS = VEHICLES.length;
 
-// FATOR DE ESCALA: Transforma custo 500 em reward -5.0
-// Isso permite que a rede aprenda muito mais rápido.
-const REWARD_SCALE = 100.0; 
+// caminho absoluto
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// pasta ../model
+export const modelDir = path.join(__dirname, "../model");
+
+// pasta ../model/dqn_final
+export const finalModelDir = path.join(modelDir, "dqn_final");
+
+// caminho file:///...
+export const finalModelUrl = `file://${finalModelDir.replace(/\\/g, "/")}`;
+
+// cria dirs necessários
+if (!fs.existsSync(modelDir)) fs.mkdirSync(modelDir, { recursive: true });
+if (!fs.existsSync(finalModelDir)) fs.mkdirSync(finalModelDir, { recursive: true });
+      // cria pasta se não existir
+if (!fs.existsSync(finalModelDir)) {
+  fs.mkdirSync(finalModelDir, { recursive: true });
+}
 
 async function train() {
   console.log("🚀 Iniciando treinamento DQN (Com Normalização de Reward)...");
@@ -146,41 +165,14 @@ async function train() {
 
     epsilon = Math.max(epsilonEnd, epsilon * epsilonDecay);
 
-    // Log mais detalhado para ver se ele está aprendendo a diferenca entre Grande e Pequena
-    if (ep % 250 === 0) {
-      // Faz uma previsão de teste rápida no log
-      const stateTeste = buildState({ distKm: 10, urgencia: true, tipoCarga: "grande", disponibilidade });
-      const qTeste = qNet.predict(stateTeste).dataSync();
-      const bestIdx = qTeste.indexOf(Math.max(...qTeste));
-      
-      console.log(`Ep: ${ep} | Eps: ${epsilon.toFixed(2)} | Teste(Grande+Urg): ${VEHICLES[bestIdx]} | Q-Van: ${qTeste[2].toFixed(2)} vs Q-Bike: ${qTeste[1].toFixed(2)}`);
-      stateTeste.dispose();
+    if (ep % 50 === 0) {
+      console.log(`Episode ${ep}/${nEpisodes} - epReward=${epReward.toFixed(2)} - epsilon=${epsilon.toFixed(3)} - buffer=${buffer.size()}`);
     }
   }
 
-  // --- 3. SALVAMENTO ---
-  const saveDir = "./model/generated_dqn"; 
-  if (!fs.existsSync(saveDir)) {
-      fs.mkdirSync(saveDir, { recursive: true });
-  }
-  
-  await qNet.save(tf.io.withSaveHandler(async (artifacts) => {
-      if (artifacts.weightData) {
-          fs.writeFileSync(path.join(saveDir, "weights.bin"), Buffer.from(artifacts.weightData));
-      }
-      artifacts.weightData = undefined; 
-      const manifest = {
-          modelTopology: artifacts.modelTopology,
-          format: artifacts.format,
-          generatedBy: artifacts.generatedBy,
-          convertedBy: artifacts.convertedBy,
-          weightsManifest: [{ paths: ["./weights.bin"], weights: artifacts.weightSpecs }]
-      };
-      fs.writeFileSync(path.join(saveDir, "model.json"), JSON.stringify(manifest));
-      return { modelArtifactsInfo: { dateSaved: new Date(), modelTopologyType: "JSON" } };
-  }));
-  
-  console.log(`✅ Modelo Salvo!`);
+  // salvar modelo final
+  await qNet.save(finalModelUrl);
+  console.log("Training complete. Model saved to ", finalModelUrl);
 }
 
 train().catch(console.error);

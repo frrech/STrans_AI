@@ -27,17 +27,8 @@ function parseNum(val) {
 }
 
 function readCSV(fileName) {
-  // Lê o arquivo
-  const csvPath = path.join(DATA_DIR, fileName);
-  const csv = fs.readFileSync(csvPath, "utf8");
-  
-  // Parse com ponto e vírgula
-  return parse(csv, { 
-    columns: true, 
-    skip_empty_lines: true,
-    delimiter: ';', // <--- IMPORTANTE: Define ; como separador
-    trim: true      // Remove espaços em branco ao redor dos dados
-  });
+  const csv = fs.readFileSync(path.join(DATA_DIR, fileName), "utf8");
+  return parse(csv, { columns: true, skip_empty_lines: true, delimiter: ";" });
 }
 
 export function loadAllData() {
