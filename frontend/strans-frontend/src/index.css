@@ -1,11 +1,8 @@
-
-/* 2. Diretivas do Tailwind (Obrigatório para os estilos e gráficos funcionarem) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 3. Estilos globais extras */
 body {
-  background-color: #f8fafc; /* Slate-50 */
-  color: #1e293b; /* Slate-800 */
+  background-color: #f8fafc;
+  color: #1e293b;
 }
