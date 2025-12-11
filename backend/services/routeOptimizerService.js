@@ -14,26 +14,43 @@ export async function initRouteOptimizer() {
   await loadModel(); // carrega o modelo salvo ou inicializa
 }
 
-export async function obterMelhorRota({ origem, destino, tipoCarga="pequena", urgencia=false }) {
-  // 1) estimar distância (método simples: extrair de rotas CSV média; ideal: Google Maps API)
-  // Aqui usamos uma heurística: distancia média de rotas * random factor
-  const ds = dataSnapshot ?? { rotas: [], clientes: [], entregas: [], veiculos: [] };
-  const rotas = ds.rotas ?? [];
-  const avgDist = (rotas.length > 0) ? rotas[rotas.length-1].distancia_media_rota_km || 5 : 5;
-  const distKm = Math.max(1, avgDist * (0.6 + Math.random()*1.4)); // 0.6x-2x
+// ... imports ...
 
-  // 2) construir estado
-  const disponibilidade = (dataSnapshot.veiculos && dataSnapshot.veiculos[dataSnapshot.veiculos.length-1]) || {};
+export async function obterMelhorRota({ origem, destino, tipoCarga="pequena", urgencia=false, distancia = null }) {
+  // 1) DEFINIÇÃO DA DISTÂNCIA
+  let distKm;
+
+  if (distancia) {
+    // Se o usuário mandou no JSON, usamos ela!
+    distKm = parseFloat(distancia);
+  } else {
+    // Fallback: Se não mandou, usamos a heurística aleatória baseada no CSV
+    // Isso garante que o sistema não quebre se o campo faltar
+    const ds = dataSnapshot ?? { rotas: [] };
+    const rotas = ds.rotas ?? [];
+    const avgDist = (rotas.length > 0) ? rotas[rotas.length-1].distancia_media_rota_km || 5 : 5;
+    
+    // Gera algo entre 0.5x e 1.5x a média
+    distKm = Math.max(1, avgDist * (0.5 + Math.random())); 
+  }
+
+  console.log(`📍 Calculando rota: ${distKm.toFixed(1)} km | Carga: ${tipoCarga}`);
+
+  // 2) CONSTRUIR ESTADO
+  // Importante: Passar a distKm calculada acima
+  const disponibilidade = (dataSnapshot?.veiculos && dataSnapshot.veiculos[dataSnapshot.veiculos.length-1]) || {};
+  
+  // Normaliza inputs para o tensor
   const stateTensor = buildState({ distKm, urgencia, tipoCarga, disponibilidade });
 
-  // 3) prever ação com DQN
+  // 3) PREVER AÇÃO (DQN)
   const { actionIndex, vehicle, qvals } = await escolherMelhorAcao(stateTensor, { 
-    tipoCarga: tipoCarga, // ex: "grande"
-    distKm: distKm        // ex: 25.5
-});
+    tipoCarga, 
+    distKm // Passamos distKm para a máscara de segurança interna (se houver)
+  });
 
-  // 4) estimar custo para a ação selecionada (usamos custos base no CSV)
-  const lastVeiculos = dataSnapshot.veiculos[dataSnapshot.veiculos.length-1] || {};
+  // 4) ESTIMAR CUSTO E RETORNO
+  const lastVeiculos = dataSnapshot?.veiculos?.[dataSnapshot.veiculos.length-1] || {};
   const baseCosts = {
     moto: lastVeiculos.custo_operacional_moto_dia || 20,
     bike: lastVeiculos.custo_operacional_bike_dia || 5,
@@ -41,20 +58,17 @@ export async function obterMelhorRota({ origem, destino, tipoCarga="pequena", ur
     caminhao: lastVeiculos.custo_operacional_caminhao_dia || 200
   };
 
-  const pedagio = 0; // poderia estimar por rota
-  const tempoH = distKm / 30;
-  const custo = computeCost({ vehicle, distKm, tempoH, baseCosts, pedagio, urgencia });
-  const precoEstimado = aplicarPricing(custo, urgencia, 0); // desconto volume 0 por padrão
+  const tempoH = distKm / (vehicle === 'bike' ? 15 : vehicle === 'moto' ? 40 : 60); // Ajuste de velocidade
+  const custo = computeCost({ vehicle, distKm, baseCosts, urgencia, tipoCarga });
+  const precoEstimado = aplicarPricing(custo, urgencia, 0);
 
   return {
     origem, destino, tipoCarga, urgencia,
     escolha: vehicle,
-    actionIndex,
-    qvals,
-    distanciaKm: distKm,
+    distanciaKm: Number(distKm.toFixed(2)), // Retorna a distância usada
     tempoEstimadoMin: Math.round(tempoH*60),
     precoEstimado: Number(precoEstimado.toFixed(2)),
-    meta: "DQN",
-    timestamp: new Date().toISOString()
+    qvals, // Útil para debug
+    meta: "DQN"
   };
 }

@@ -2,7 +2,8 @@ import { obterMelhorRota } from "../services/routeOptimizerService.js";
 
 export async function calcularMelhorRota(req, res) {
   try {
-    const { origem, destino, tipoCarga, urgencia } = req.body;
+    // 1. ADICIONADO: Extrair 'distancia' do body
+    const { origem, destino, tipoCarga, urgencia, distancia } = req.body;
 
     if (!origem || !destino) {
       return res.status(400).json({
@@ -10,11 +11,13 @@ export async function calcularMelhorRota(req, res) {
       });
     }
 
+    // 2. ADICIONADO: Repassar 'distancia' para o serviço
     const resultado = await obterMelhorRota({
       origem,
       destino,
       tipoCarga,
       urgencia,
+      distancia // <--- Fundamental para o cálculo funcionar
     });
 
     res.json(resultado);
