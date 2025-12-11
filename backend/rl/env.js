@@ -106,19 +106,19 @@ export function computeCost({
 
   // 1. BIKE
   if (vehicle === "bike") {
-    if (tipoCarga === "grande") cost += 1000;
-    if (tipoCarga === "media") cost += 500;
+    if (tipoCarga === "grande") cost += 5000;
+    if (tipoCarga === "media") cost += 1000;
 
     if (distKm > 5 || urgencia) {
       cost += 600; // longe ou urgente → desestimula bike
     } else {
-      cost -= 300; // micro distância leve, sem urgência → bike reina
+      cost -= 40; // micro distância leve, sem urgência → bike reina
     }
   }
 
   // 2. MOTO
   if (vehicle === "moto") {
-    if (tipoCarga === "grande") cost += 1000;
+    if (tipoCarga === "grande") cost += 5000;
     if (distKm > 80) cost += 600;
 
     // ZONA CAMINHÃO: grande + >80km + sem urgência → moto deve perder feio
@@ -126,11 +126,12 @@ export function computeCost({
       cost += 1500; // castigo extra forte para moto
     }
 
+
     // Anti-canibalização da bike em micro distância sem urgência
     if (distKm <= 5 && !urgencia) {
       cost += 600;
     } else {
-      cost -= 400; // moto domina média distância / urgência
+      cost -= 45; // moto domina média distância / urgência
     }
   }
 
