@@ -11,7 +11,7 @@ const N_ACTIONS = VEHICLES.length;
 const REWARD_SCALE = 100.0; 
 const INPUT_DIM = 9; 
 
-const STEPS_PER_EPISODE = 10;   // nº de entregas simuladas por episódio
+const STEPS_PER_EPISODE = 10;
 const WARMUP_EPISODES     = 300;
 
 function getNormalizedReward(c) {
@@ -39,7 +39,6 @@ function frotaEsgotada(disponibilidade) {
   );
 }
 
-// gerarCenario = o mesmo que você já tem
 function gerarCenario() {
   const p = Math.random();
   let distKm, urgencia, tipoCarga;
@@ -72,7 +71,7 @@ function gerarCenario() {
 }
 
 async function train() {
-  console.log("🚀 Iniciando treinamento DQN Multi-step...");
+  console.log("Iniciando treinamento DQN Multi-step...");
 
   const nEpisodes   = 8000;
   const batchSize   = 64;
@@ -113,10 +112,8 @@ async function train() {
   const optimizer = tf.train.adam(learningRate);
   const buffer = new ReplayBuffer(150000);
 
-  // ==================================
   // 1) AQUECIMENTO (exploração aleatória)
-  // ==================================
-  console.log("🔥 Aquecendo buffer com episódios multi-step...");
+  console.log("Aquecendo buffer com episódios multi-step...");
   for (let ep = 0; ep < WARMUP_EPISODES; ep++) {
     let disponibilidade = { ...disponibilidadeInicial };
     let scenario = gerarCenario();
@@ -176,10 +173,8 @@ async function train() {
     }
   }
 
-  // ======================
   // 2) TREINAMENTO RL
-  // ======================
-  console.log(`🏋️ Treinando por ${nEpisodes} episódios...`);
+  console.log(`Treinando por ${nEpisodes} episódios...`);
 
   for (let ep = 1; ep <= nEpisodes; ep++) {
     let disponibilidade = { ...disponibilidadeInicial };
@@ -281,7 +276,7 @@ async function train() {
 
     epsilon = Math.max(epsilonEnd, epsilon * epsilonDecay);
 
-    // Logs de sanity check (mantendo seu estilo)
+    // Logs de sanity check
     if (ep % 1000 === 0) {
       console.log(`--- Ep ${ep} | Epsilon: ${epsilon.toFixed(2)} ---`);
 
@@ -310,7 +305,6 @@ async function train() {
     }
   }
 
-  // salvar igual você já fazia
   const saveDir = "./model/generated_dqn"; 
   if (!fs.existsSync(saveDir)) fs.mkdirSync(saveDir, { recursive: true });
   
